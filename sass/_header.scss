@@ -1,0 +1,116 @@
+/**************************************************************************************************
+ *
+ *  @Section: Header
+ *
+***************************************************************************************************/
+$header-height: 35vw;
+$header-max-height: 600px;
+
+.site-header {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	max-height: initial;
+	min-height: initial;
+
+	&:before,
+	&:after {
+		content: '';
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: $header-height;
+		max-height: $header-max-height;
+		min-height: 350px;
+		z-index: -1;
+	}
+
+	&:before {
+		display: none;
+	}
+
+	&:after {
+		display: none;
+		position: fixed;
+		background-image: url("https://2018.managua.wordcamp.org/files/2018/05/banner-bkg_left.png"),
+											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png");
+		background-repeat: 	no-repeat,
+												no-repeat;
+		background-position: 	bottom left,
+													bottom right;
+		background-size: 	25vw,
+											25vw;
+	}
+
+	hgroup {
+		position: relative;
+		display: block;
+	}
+
+	.site-title {
+		display: block;
+
+		a {
+			display: block;
+			width: 250px;
+			height: auto;
+			margin: 0;
+			background-image: url("https://2019.managua.wordcamp.org/files/2019/01/prop6.png");
+			text-indent: -9999px;
+          	white-space: nowrap;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
+	}
+
+	.site-description {
+		margin-top: 20px;
+		color: $black;
+		text-transform: uppercase;
+	}
+}
+
+.widget-area.front-page {
+	position: relative;
+
+	.registration-button {
+		position: absolute;
+		top: -150px;
+		@include centered-x;
+	}
+}
+
+@media only screen and (max-width: $tablet-landscape) {
+
+	.site-header {
+
+		$header-height: 350px;
+		$header-max-height: auto;
+
+		height: $header-height;
+		min-height: $header-max-height;
+
+		&:before,
+		&:after {
+			height: $header-height;
+			min-height: $header-max-height;
+		}
+
+		&:after { background-size: 180px, 180px; }
+
+		.site-description { @include font-size(1.6); }
+	}
+
+}
+
+@media only screen and (max-width: $mobile) {
+
+	.site-header {
+
+		&:after {
+			background-position: 	bottom left -60px, bottom right -20px, top center;
+		}
+	}
+}

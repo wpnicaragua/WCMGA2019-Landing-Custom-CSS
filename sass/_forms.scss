@@ -1,0 +1,50 @@
+/**************************************************************************************************
+ *
+ *  @Section: Forms
+ *
+***************************************************************************************************/
+.site-content,
+.widget-area {
+  $field-height: 40px;
+
+  input:not([type='button']):not([type='submit']):not([type="radio"]):not([type="checkbox"]),
+  textarea {
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+    height: $field-height;
+    color: $default-text;
+    background: $white;
+    border: 1px solid $border-gray;
+    box-shadow: none;
+    @include transition;
+  }
+
+  textarea {
+    max-height: 100px;
+  }
+
+  select {
+    position: relative;
+    width: 100%;
+    height: $field-height;
+    padding: 5px  12px;
+    border: 1px solid $border-gray;
+    background: $white;
+    z-index: 2;
+    @include transition;
+  }
+
+  input[type="submit"],
+  input[type="button"] {
+    @extend .btn;
+  }
+
+  input[type="radio"] {
+    height: 15px !important;
+  }
+
+  .contact-form label span {
+    color: $second-color;
+  }
+}
