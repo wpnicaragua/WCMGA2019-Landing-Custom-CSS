@@ -26,23 +26,6 @@ $header-max-height: 600px;
 		z-index: -1;
 	}
 
-	&:before {
-		display: none;
-	}
-
-	&:after {
-		display: none;
-		position: fixed;
-		background-image: url("https://2018.managua.wordcamp.org/files/2018/05/banner-bkg_left.png"),
-											url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg_right.png");
-		background-repeat: 	no-repeat,
-												no-repeat;
-		background-position: 	bottom left,
-													bottom right;
-		background-size: 	25vw,
-											25vw;
-	}
-
 	hgroup {
 		position: relative;
 		display: block;
