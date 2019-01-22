@@ -1,0 +1,28 @@
+/*
+* WCMGA2017-Custom-CSS
+* Custom CSS for WordCamp Managua 2017
+* https://github.com/wpnicaragua/WCMGA2017-Custom-CSS#wcmga2017-custom-css
+*/
+
+// Global.
+@import "variables";
+@import "mixins";
+@import "layouts";
+@import "global";
+@import "header";
+@import "navigation";
+@import "footer";
+@import "forms";
+
+// Templates/Pages.
+@import "./pages/content";
+@import "./pages/homepage";
+@import "./pages/llamado-a-ponentes";
+@import "./pages/organizers";
+@import "./pages/speakers";
+@import "./pages/schedule";
+@import "./pages/atendees";
+@import "./pages/tickets";
+
+// Templates/Single Pages.
+// @import "./pages/single";
