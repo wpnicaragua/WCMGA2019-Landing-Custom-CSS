@@ -3,18 +3,34 @@
  *  @Section: llamado-a-ponentes
  *
 ***************************************************************************************************/
-.page-slug-llamado-a-ponentes,
-.home.page-slug-llamado-a-ponentes {
-
+.page-slug-call-for-speakers,
+.home.page-slug-call-for-speakers {
+	$header-height: 35vw;
+	$header-max-height: 600px;
+	
 	.site-header {
-		height: 25vw;
-		min-height: initial;
+		position: relative;
+	width: 100%;
+	height: 150px;
+	max-height: initial;
+	min-height: initial;
+
+	&:before,
+	&:after {
+		content: '';
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: $header-height;
+		max-height: $header-max-height;
+		min-height: 350px;
+		z-index: -1;
+	}
 
 		&:before {
-			background-image: url("https://2018.managua.wordcamp.org/files/2018/01/banner-bkg.png");
-			background-repeat: no-repeat;
-			background-position: top center;
-			background-size: cover;
+			
+			display: none;
 		}
 
 		.site-navigation {
@@ -26,7 +42,7 @@
 			a {
 				width: 15vw;
 				height: 15vw;
-				background-image: url("https://2018.managua.wordcamp.org/files/2018/01/wcmga18-logo-only.png");
+				background-image: url("https://2019.managua.wordcamp.org/files/2019/01/logo-wc-2019.png");
 			}
 		}
 	}
@@ -37,10 +53,8 @@
 
 	#main {
 		padding-bottom: 200px;
-		background-image: url("https://2018.managua.wordcamp.org/files/2018/01/landing-footer-bkg.png");
-		background-repeat: no-repeat;
-		background-position: bottom left;
-		background-size: auto;
+		//background-image: url("https://2019.managua.wordcamp.org/files/2019/01/avi-richards-183715-unsplashbanner.png");
+		
 
 		&:after {
 			display: none;
@@ -57,6 +71,7 @@
 				@include centered-x;
 
 				&:after {
+					
 					content: '';
 					position: absolute;
 					top: 80%;
@@ -70,6 +85,7 @@
 					width: 100%;
 					z-index: -1;
 				  @include transform(translate(-50%, -50%) skewX(-10deg) rotate(-3deg));
+				  display: none;
 				}
 			}
 
@@ -79,12 +95,13 @@
 				font-size: 5rem;
 				font-weight: 700;
 				padding: 0 30px;
-				font-style: italic;
+				//font-style: italic;
 				white-space: nowrap;
 				color: $default-text;
-				@include transform(rotate(-3deg));
+				
 
 				&:after {
+					display: none;
 					content: '';
 					position: absolute;
 					top: 50%;
@@ -120,8 +137,9 @@
 							top: 0;
 							right: 0;
 							width: 45%;
-							color: $white;
+							color: $main-color;
 							background-color: $light-third-color;
+							border-radius: 8px;
 						}
 					}
 				}
