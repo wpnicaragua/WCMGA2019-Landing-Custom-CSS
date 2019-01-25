@@ -10,9 +10,7 @@
 	width: 100%;
 	min-height: 650px;
 	background-color: $white;
-	background-image: url("https://2018.managua.wordcamp.org/files/2018/03/triangles-bkg_white.png");
-	background-repeat: no-repeat;
-	background-position: top center;
+	
 
 	&:before,
 	&:after { @include clearfix; }

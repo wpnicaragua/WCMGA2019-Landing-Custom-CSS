@@ -17,6 +17,7 @@
     background: $white;
     border: 1px solid $border-gray;
     box-shadow: none;
+    border-radius: 6px;
     @include transition;
   }
 
@@ -33,18 +34,27 @@
     background: $white;
     z-index: 2;
     @include transition;
+    border-radius: 6px;
   }
 
   input[type="submit"],
   input[type="button"] {
-    @extend .btn;
+    background-color: $second-color;
+    font-weight: bold;
+    width:100%;
+    border-radius: 5px;
   }
 
   input[type="radio"] {
-    height: 15px !important;
+    height: 15px;
+    
+
   }
 
+
+
   .contact-form label span {
-    color: $second-color;
+    color: $main-color;
+
   }
 }

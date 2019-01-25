@@ -26,6 +26,18 @@ $header-max-height: 600px;
 		z-index: -1;
 	}
 
+<<<<<<< HEAD
+	&:before {
+		display: none;
+	}
+
+	&:after {
+		display: none;
+		
+	}
+
+=======
+>>>>>>> dcd1d333fe70d76751a369a4ff8c1a9c4d820dac
 	hgroup {
 		position: relative;
 		display: block;
@@ -39,7 +51,7 @@ $header-max-height: 600px;
 			width: 250px;
 			height: auto;
 			margin: 0;
-			background-image: url("https://2019.managua.wordcamp.org/files/2019/01/prop6.png");
+			background-image: url("https://2019.managua.wordcamp.org/files/2019/01/logo-wc-2019.png");
 			text-indent: -9999px;
           	white-space: nowrap;
 			background-repeat: no-repeat;
