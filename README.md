@@ -3,7 +3,7 @@ Custom CSS for the WCMGA 2019 Landing Page
 
 ## Guia de personalizacion
 
-###requerimientos
+### Requerimientos
 
 * tener instalado GIT
 * tener instalado Node (npm)
@@ -68,6 +68,7 @@ este esta sido escuchado por la extension emmet livestyle instalada en el navega
 3. hacer push en la rama
 `git push origin [nombre]`
 
+https://projects.invisionapp.com/share/2PQ3TD9Z9FM#/342325813_landing_Page
 
 
 
