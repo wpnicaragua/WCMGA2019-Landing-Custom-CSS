@@ -3,6 +3,7 @@
  *  @Section: llamado-a-ponentes
  *
 ***************************************************************************************************/
+
 .page-slug-call-for-speakers,
 .home.page-slug-call-for-speakers {
 	$header-height: 35vw;
@@ -46,8 +47,7 @@
 				margin: 0;
 				background-image: url("https://2019.managua.wordcamp.org/files/2019/01/logo-wc-2019.png");
 				text-indent: -9999px;
-	          	white-space: nowrap;
-				background-repeat: no-repeat;
+	          	background-repeat: no-repeat;
 				background-position: center center;
 				background-size: contain;
 
@@ -80,43 +80,22 @@
 			padding-top: 0px;
 
 			.entry-header {
-				width: 100%;
-				position: absolute;
-				top: -55rem;
-				text-align: center;
-				@include centered-x;
+					width: 100%;
+					height: 100%;
+										
+					.entry-title {
+						
+						font-size: 5rem;
+						font-weight: 700;
+						color: #fff;
+						margin:0;
+						padding: 0;
+						
 				
-				
-				&:after {
-					
-					display: none;
-					content: '';
-					position: relative;
-					top: 0%;
-					left: 0%;
-					height: 0px;
-					z-index: -1;
-				  
 				}
 			}
 
-			.entry-title {
-				position: relative;
-				display: inline-block;
-				font-size: 50px;
-				font-size: 5rem;
-				font-weight: 700;
-				white-space: nowrap;
-				color: #fff;
-				float: right;
-				background: transparent;
-				top:20rem;
-				right: 15rem;
-				&:after {
-									 
-				  display: none;
-				}
-			}
+			
 
 			#content {
 				padding-right: initial;
@@ -172,13 +151,18 @@
 	}
 }
 
+/*
 @media only screen and (max-width: $tablet-portrait) {
 
-	.page-slug-llamado-a-ponentes,
-	.home.page-slug-llamado-a-ponentes {
-
+	.page-slug-call-for-speakers,
+	.home.page-slug-call-for-speakers  {
+	
 		.site-header {
     	min-height: 300px;
+    	text-align: center;
+    	.site-title{
+    		left: 35%;
+    	}
 		}
 
 		#main {
@@ -189,9 +173,11 @@
 			#primary {
 
 				.entry-title {
-					font-size: 20px;
-    			font-size: 2rem;
-    			padding: 0 20px;
+					
+	    			padding: 0;
+	    			font-size: 4rem;
+					left: -10%;
+					display: inline-block;
 				}
 
 				#content {
@@ -199,7 +185,7 @@
 					article {
 
 						.entry-content {
-					    padding: 0 20px;
+					    	padding: 0 20px;
 
 							div[id^="contact-form-"] {
 								position: relative;
@@ -212,3 +198,49 @@
 		}
 	}
 }
+
+	@media only screen and (max-width: $mobile) {
+		
+		.page-slug-call-for-speakers,
+		.home.page-slug-call-for-speakers  {
+			.site-header {
+		    	min-height: 300px;
+		    	text-align: center;
+		    	.site-title{
+		    		left:15%;
+		    	}
+			}
+
+				#main {
+				padding-left: initial;
+				padding-right: initial;
+				padding-bottom: 50px;
+
+				#primary {
+
+					.entry-title {
+						
+		    			padding: 5rem;
+		    			font-size: 4rem;
+						right: -10%;
+						
+					}
+
+					#content {
+
+						article {
+
+							.entry-content {
+						    	padding: 0 20px;
+
+								div[id^="contact-form-"] {
+									position: relative;
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+	}
+}*/
