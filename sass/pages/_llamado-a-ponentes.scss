@@ -80,8 +80,12 @@
 			padding-top: 0px;
 
 			.entry-header {
-					width: 100%;
+					position: absolute;
+					width: 30%;
 					height: 100%;
+					top:-50%;
+					left: 60%;
+
 										
 					.entry-title {
 						
@@ -151,7 +155,7 @@
 	}
 }
 
-/*
+
 @media only screen and (max-width: $tablet-portrait) {
 
 	.page-slug-call-for-speakers,
@@ -172,13 +176,25 @@
 
 			#primary {
 
-				.entry-title {
-					
-	    			padding: 0;
-	    			font-size: 4rem;
-					left: -10%;
-					display: inline-block;
+				.entry-header {
+					position: absolute;
+					width: 40%;
+					height: 40%;
+					top:-25%;
+					left: 40%;
+
+										
+					.entry-title {
+						
+						font-size: 5rem;
+						font-weight: 700;
+						color: #fff;
+						margin:0;
+						padding: 0;
+						
+				
 				}
+			}
 
 				#content {
 
@@ -199,7 +215,7 @@
 	}
 }
 
-	@media only screen and (max-width: $mobile) {
+//	@media only screen and (max-width: $mobile) {
 		
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
@@ -218,12 +234,24 @@
 
 				#primary {
 
-					.entry-title {
+						.entry-header {
+							position: absolute;
+							width: 100%;
+							height: 40%;
+							top:-25%;
+							left: 20%;
+
+												
+							.entry-title {
+								
+								font-size: 5rem;
+								font-weight: 700;
+								color: #fff;
+								margin:0;
+								padding: 0;
 						
-		    			padding: 5rem;
-		    			font-size: 4rem;
-						right: -10%;
-						
+				
+						}
 					}
 
 					#content {
@@ -243,4 +271,4 @@
 				}
 			}
 	}
-}*/
+//}
