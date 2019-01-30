@@ -124,6 +124,11 @@
 							color: $main-color;
 							background-color: $light-third-color;
 							border-radius: 8px;
+
+							.contact-form label span {
+							    color: $main-color;
+
+							  }
 						}
 					}
 				}
