@@ -13,9 +13,7 @@
 		position: relative;
 		width: 100%;
 		height: 600px;
-		//max-height: initial;
-		//min-height: initial;
-		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/Slider-wordpress.png');
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/banner-wordpress.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -94,7 +92,8 @@
 						color: #fff;
 						margin:0;
 						padding: 0;
-						
+						text-transform: uppercase;
+						line-height: 1.5;
 				
 				}
 			}
@@ -121,7 +120,7 @@
 							position: absolute;
 							top: 0;
 							right: 0;
-							width: 45%;
+							width: 50%;
 							color: $main-color;
 							background-color: $light-third-color;
 							border-radius: 8px;
@@ -215,13 +214,15 @@
 	}
 }
 
-@media only screen and (max-width: $mobile) {
+//@media only screen and (max-width: $mobile) {
 		
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
 			.site-header {
 		    	min-height: 300px;
-		    	text-align: center;
+		    	background-position: center left -200px;
+				background-size: 300% auto;
+
 		    	.site-title{
 		    		left:15%;
 		    	}
@@ -236,39 +237,61 @@
 
 						.entry-header {
 							position: absolute;
-							width: 100%;
+							
 							height: 40%;
-							top:-25%;
-							left: 20%;
+							top:-12%;
+							left: 5%;
+  							right: 5%;
+							width: 90vw;
 
 												
 							.entry-title {
 								
-								font-size: 5rem;
-								font-weight: 700;
+								font-size: 3.7rem;
+								font-weight: 900;
 								color: #fff;
 								margin:0;
-								padding: 0;
-						
-				
+								padding: 5px;
+								
 						}
 					}
 
 					#content {
-
+						padding: 0 10px !important;
 						article {
 
 							.entry-content {
-						    	padding: 0 20px;
+						    	padding: 0;
+
+						    	//Form select
+								.site-content select, .widget-area select{
+								  color: #666 !important;
+								}
+
+								//Form Checks
+								.contact-form label.checkbox, .contact-form label.radio{
+								  font-weight: 600;
+								}
+
 
 								div[id^="contact-form-"] {
 									position: relative;
 									width: 100%;
+									label{
+										font-weight: 600;
+									}
+									input[type="button"]{
+										background-color: #ea4a15;
+									}
+
 								}
 							}
 						}
 					}
 				}
 			}
+			.site-footer{
+				height: auto;
+			}
 	}
-}
+//}

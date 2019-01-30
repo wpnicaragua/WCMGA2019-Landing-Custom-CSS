@@ -39,7 +39,7 @@
 
   input[type="submit"],
   input[type="button"] {
-    background-color: $second-color;
+    background-color: $second-color!important;
     font-weight: bold;
     width:100%;
     border-radius: 5px;
