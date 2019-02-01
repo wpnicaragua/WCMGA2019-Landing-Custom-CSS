@@ -43,7 +43,7 @@
 				width: 250px;
 				height: auto;
 				margin: 0;
-				background-image: url("https://2019.managua.wordcamp.org/files/2019/01/logo-wc-2019.png");
+				background-image: url("https://2019.managua.wordcamp.org/files/2019/01/logo-2019.png");
 				text-indent: -9999px;
 	          	background-repeat: no-repeat;
 				background-position: center center;
@@ -79,10 +79,10 @@
 
 			.entry-header {
 					position: absolute;
-					width: 30%;
-					height: 100%;
-					top:-50%;
-					left: 60%;
+					width: 50%;
+					height: 50%;
+					top:-35rem;
+					left: 50%;
 
 										
 					.entry-title {
@@ -112,14 +112,15 @@
 					.entry-content {
 						position: relative;
 						top:0;
-						padding-right: 50%;
+						padding-right: 53%;
 						font-size: 2rem;
+						
 
 						div[id^="contact-form-"] {
 							padding: 20px;
 							position: absolute;
 							top: 0;
-							right: 0;
+							//right: 0;
 							width: 50%;
 							color: $main-color;
 							background-color: $light-third-color;
@@ -161,9 +162,8 @@
 		display: block;
 		.site-info{
 			background: transparent;
-			&:before{
-				display: none;
-			}
+			bottom:-30rem;
+		
 		}
 	}
 }
@@ -176,7 +176,8 @@
 	
 		.site-header {
     	min-height: 300px;
-    	text-align: center;
+    	background-position: center left -400px;
+				background-size: 350% auto;
     	.site-title{
     		left: 35%;
     	}
@@ -193,8 +194,8 @@
 					position: absolute;
 					width: 40%;
 					height: 40%;
-					top:-25%;
-					left: 40%;
+					top:-10%;
+					left: 20rem;
 
 										
 					.entry-title {
@@ -224,6 +225,12 @@
 				}
 			}
 		}
+		.site-footer{
+				height: 90vh;
+				.site-info{
+					bottom: 0!important;
+				}
+		}
 	}
 }
 
@@ -232,31 +239,35 @@
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
 			.site-header {
-		    	min-height: 300px;
-		    	background-position: center left -200px;
-				background-size: 300% auto;
+		    	//min-height: 300px;
+		    	background-position: center left -400px;
+				background-size: 400% auto;
 
 		    	.site-title{
-		    		left:15%;
+		    		//width: 100%;
+
+		    		left:10rem;
+		    		a{
+		    			width: 500px;
+
+		    		}
 		    	}
 			}
 
 				#main {
-				padding-left: initial;
-				padding-right: initial;
+				
 				padding-bottom: 50px;
-				margin-top: 0;
+				margin-top: 100px;
 				#primary {
 
 						.entry-header {
 							position: absolute;
-							
+							width: 50%;
 							height: 40%;
-							top:-12%;
 							left: 5%;
   							right: 5%;
 							width: 90vw;
-
+							top:-20rem;
 												
 							.entry-title {
 								
@@ -265,16 +276,17 @@
 								color: #fff;
 								margin:0;
 								padding: 5px;
-								
+
 						}
 					}
 
 					#content {
-						//padding: 0 10px !important;
+						
 						article {
-
+							margin-right: 15px;
 							.entry-content {
-						    	padding: 0;
+						    	padding: 0 10px;
+						    	
 
 						    	//Form select
 								.site-content select, .widget-area select{
@@ -305,6 +317,95 @@
 			}
 			.site-footer{
 				height: 90vh;
+				
+				background-position: center left -350px;
+				margin-top: 2rem;
+				.site-info{
+					bottom: 0!important;
+				}
+			}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+		
+		.page-slug-call-for-speakers,
+		.home.page-slug-call-for-speakers  {
+			.site-header {
+		    	
+		    	background-position: center left -500px;
+				background-size: 550% auto;
+
+		    	.site-title{
+		    		
+		    		left:calc(50% - 135px);
+
+			    		a{
+			    			width: 500px;
+
+			    		}
+			    	}
+				}
+
+				#main {
+				
+				padding-bottom: 50px;
+				margin-top: 100px;
+				#primary {
+
+						.entry-header {
+							position: absolute;
+							width: 50%;
+							height: 10rem;
+							left: 1rem;
+  							width: 90vw;
+							top:-20rem;
+												
+							.entry-title {
+								
+								font-size: 3.7rem;
+								font-weight: 900;
+								color: #fff;
+								margin:0;
+								padding: 5px;
+
+						}
+					}
+
+					#content {
+												
+						article {
+
+							.entry-content {
+						    	padding: 0 10px;
+
+
+						    	
+								div[id^="contact-form-"] {
+									position: relative;
+									width: 100%!important;
+									
+									label{
+										font-weight: 600;
+									}
+									input[type="button"]{
+										background-color: #ea4a15;
+									}
+
+								}
+							}
+						}
+					}
+				}
+			}
+			.site-footer{
+				height: 60vh;
+				
+				background-position: center left -300px;
+				margin-top: 2rem;
+				.site-info{
+					bottom: 0!important;
+				}
 			}
 	}
 }
