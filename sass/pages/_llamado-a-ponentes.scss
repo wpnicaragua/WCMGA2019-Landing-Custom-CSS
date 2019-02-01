@@ -120,7 +120,7 @@
 							padding: 20px;
 							position: absolute;
 							top: 0;
-							//right: 0;
+							right: 0;
 							width: 50%;
 							color: $main-color;
 							background-color: $light-third-color;
@@ -163,7 +163,9 @@
 		.site-info{
 			background: transparent;
 			bottom:-30rem;
-		
+			&:before{
+				display: none;
+			}
 		}
 	}
 }
