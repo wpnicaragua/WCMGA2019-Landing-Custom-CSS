@@ -70,6 +70,7 @@
 		padding-top: 60px!important;
 		background: transparent!important;
 		margin-top: 15rem;
+
 		&:after {
 			display: none;
 		}
@@ -113,9 +114,8 @@
 						position: relative;
 						top:0;
 						padding-right: 53%;
-						font-size: 2rem;
+						font-size: 1.7rem;
 						
-
 						div[id^="contact-form-"] {
 							padding: 20px;
 							position: absolute;
@@ -125,7 +125,7 @@
 							color: $main-color;
 							background-color: $light-third-color;
 							border-radius: 8px;
-
+							font-size: 1.7rem;
 							.contact-form label span {
 							    color: $main-color;
 
@@ -138,6 +138,18 @@
 										margin-bottom:1rem;
 										line-height: 1.5;
 									}
+
+							.grunion-field-label{
+								span{
+									color: $light-third-color!important;
+									&:after{
+										position:relative;
+										content: '*';
+										color:$main-color;
+										right: 8rem;
+									}
+								}
+							}
 
 						}
 					}
@@ -152,8 +164,8 @@
 
 	.site-footer {
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/avi-richards-183715-unsplashbanner.png');
-			background-repeat: no-repeat;
-			background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
 		position: relative;
 		width: 100%;
 		height: 90vh;
@@ -165,6 +177,33 @@
 			bottom:-30rem;
 			&:before{
 				display: none;
+			}
+		}
+		#custom_html-2{
+			position:absolute;
+			font-size: 3rem;
+			//left: calc(40% + 1rem);
+			width: 100%;
+			top:calc(50% - 1rem);
+			
+			.widget-title{
+				display: none;
+			}
+			
+			.custom-html-widget{
+				width: 100%;
+				display: flex;
+			}
+
+			.social{
+				margin: 0 auto;
+			}
+
+			a{
+				color:#fff!important;
+				font-size: 5rem;
+				padding: 2rem;
+				cursor: pointer;
 			}
 		}
 	}
@@ -179,10 +218,10 @@
 		.site-header {
     	min-height: 300px;
     	background-position: center left -400px;
-				background-size: 350% auto;
-    	.site-title{
-    		left: 35%;
-    	}
+		background-size: 350% auto;
+	    	.site-title{
+	    		left: 35%;
+	    	}
 		}
 
 		#main {
@@ -196,7 +235,7 @@
 					position: absolute;
 					width: 40%;
 					height: 40%;
-					top:-10%;
+					top:-15%;
 					left: 20rem;
 
 										
@@ -228,9 +267,15 @@
 			}
 		}
 		.site-footer{
-				height: 90vh;
+				height: 70vh;
+				background-position: center left -350px;
 				.site-info{
 					bottom: 0!important;
+					top:20rem;
+				}
+
+				#custom_html-2{
+					top: 35rem;
 				}
 		}
 	}
@@ -241,14 +286,13 @@
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
 			.site-header {
-		    	//min-height: 300px;
-		    	background-position: center left -400px;
-				background-size: 400% auto;
+		    	
+		    	background-position: center left -500px;
+				background-size: 500% auto;
 
 		    	.site-title{
-		    		//width: 100%;
-
-		    		left:10rem;
+		    		
+		    		left:5rem;
 		    		a{
 		    			width: 500px;
 
@@ -318,18 +362,110 @@
 				}
 			}
 			.site-footer{
-				height: 90vh;
-				
-				background-position: center left -350px;
+				//height: 90vh;
+				background-size: auto 100%;
+				background-position: center left -400px;
 				margin-top: 2rem;
 				.site-info{
 					bottom: 0!important;
+					top:25rem;
+				}
+
+				#custom_html-2{
+					top: 35rem;
+
+					a{
+						font-size: 4rem;
+					}
 				}
 			}
 	}
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: $mobile-portrait) {
+		
+		.page-slug-call-for-speakers,
+		.home.page-slug-call-for-speakers  {
+			.site-header {
+		    	
+		    	background-position: center left -500px;
+				background-size: 300% auto;
+
+		    	.site-title{
+		    		
+		    		left:calc(50% - 135px);
+
+			    		a{
+			    			width: 500px;
+
+			    		}
+			    	}
+				}
+
+				#main {
+				
+				padding-bottom: 50px;
+				margin-top: 100px;
+				#primary {
+
+						.entry-header {
+							position: absolute;
+							width: 50%;
+							height: 10rem;
+							left: 25rem;
+  							
+							top:-25rem;
+												
+							.entry-title {
+								
+								font-size: 3.7rem;
+								font-weight: 900;
+								color: #fff;
+								margin:0;
+								padding: 5px;
+
+						}
+					}
+
+					#content {
+												
+						article {
+
+							.entry-content {
+						    	padding: 0 10px;
+
+
+						    	
+								div[id^="contact-form-"] {
+									position: relative;
+									width: 100%!important;
+									
+									label{
+										font-weight: 600;
+									}
+									input[type="button"]{
+										background-color: #ea4a15;
+									}
+
+								}
+							}
+						}
+					}
+				}
+			}
+			.site-footer{
+				height: 100vh;
+				
+				background-position: center left -200px;
+				margin-top: 2rem;
+				.site-info{
+					bottom: 10rem!important;
+				}
+			}
+	}
+}
+
+//@media only screen and (max-width: 360px) {
 		
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
@@ -401,13 +537,20 @@
 				}
 			}
 			.site-footer{
-				height: 60vh;
+				height: 70vh;
 				
-				background-position: center left -300px;
+				background-position: center left -200px;
 				margin-top: 2rem;
 				.site-info{
 					bottom: 0!important;
 				}
+				#custom_html-2{
+					top:20rem;
+
+					a{
+						font-size: 3.5rem;
+					}
+				}
 			}
 	}
-}
+//}
