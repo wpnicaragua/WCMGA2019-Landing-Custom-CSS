@@ -1,6 +1,7 @@
 /**************************************************************************************************
  *
- *  @Section: llamado-a-ponentes
+ *  @Section: Codigo de conducta
+ *
  *
 ***************************************************************************************************/
 
@@ -116,42 +117,6 @@
 						padding-right: 53%;
 						font-size: 1.7rem;
 						
-						div[id^="contact-form-"] {
-							padding: 20px;
-							position: absolute;
-							top: 0;
-							right: 0;
-							width: 50%;
-							color: $main-color;
-							background-color: $light-third-color;
-							border-radius: 8px;
-							font-size: 1.7rem;
-							.contact-form label span {
-							    color: $main-color;
-
-							  }
-							  .grunion-field-wrap{
-								margin-bottom: 1.5rem;				
-							  }
-
-							 label{
-										margin-bottom:1rem;
-										line-height: 1.5;
-									}
-
-							.grunion-field-label{
-								span{
-									color: $light-third-color!important;
-									&:after{
-										position:relative;
-										content: '*';
-										color:$main-color;
-										right: 8rem;
-									}
-								}
-							}
-
-						}
 					}
 				}
 			}
@@ -253,10 +218,7 @@
 						.entry-content {
 					    	padding: 0 20px;
 
-							div[id^="contact-form-"] {
-								position: relative;
-								width: 100%;
-							}
+							
 						}
 					}
 				}
@@ -286,7 +248,7 @@
 	}
 }
 
-//@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: $mobile) {
 		
 		.page-slug-codigo-de-conducta,
 .home.page-slug-codigo-de-conducta  {
@@ -339,28 +301,7 @@
 						    	padding: 0 10px;
 						    	
 
-						    	//Form select
-								.site-content select, .widget-area select{
-								  color: #666 !important;
-								}
-
-								//Form Checks
-								.contact-form label.checkbox, .contact-form label.radio{
-								  font-weight: 600;
-								}
-
-
-								div[id^="contact-form-"] {
-									position: relative;
-									width: 100%;
-									label{
-										font-weight: 600;
-									}
-									input[type="button"]{
-										background-color: #ea4a15;
-									}
-
-								}
+						    	
 							}
 						}
 					}
@@ -390,7 +331,7 @@
 				}
 			}
 	}
-//}
+}
 
 @media only screen and (max-width: $mobile-portrait) {
 		
@@ -446,18 +387,7 @@
 
 
 						    	
-								div[id^="contact-form-"] {
-									position: relative;
-									width: 100%!important;
-									
-									label{
-										font-weight: 600;
-									}
-									input[type="button"]{
-										background-color: #ea4a15;
-									}
-
-								}
+								
 							}
 						}
 					}
@@ -529,18 +459,7 @@
 
 
 						    	
-								div[id^="contact-form-"] {
-									position: relative;
-									width: 100%!important;
-									
-									label{
-										font-weight: 600;
-									}
-									input[type="button"]{
-										background-color: #ea4a15;
-									}
-
-								}
+								
 							}
 						}
 					}
