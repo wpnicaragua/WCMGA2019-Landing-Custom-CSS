@@ -103,7 +103,7 @@
 			
 
 			#content {
-				padding-right: initial;
+				padding-right:0;
 	
 				&:before {
 					display: none;
@@ -139,7 +139,7 @@
 		display: block;
 		.site-info{
 			background: transparent;
-			bottom:-30rem;
+			bottom:-3rem;
 			&:before{
 				display: none;
 			}
@@ -408,8 +408,9 @@
 
 @media only screen and (max-width: 360px) {
 		
-		.page-slug-codigo-de-conducta,
+.page-slug-codigo-de-conducta,
 .home.page-slug-codigo-de-conducta  {
+
 			.site-header {
 		    	
 		    	background-position: center left -500px;

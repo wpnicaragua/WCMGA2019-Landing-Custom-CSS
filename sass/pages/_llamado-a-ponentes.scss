@@ -102,7 +102,7 @@
 			
 
 			#content {
-				
+				padding-right: 0;
 	
 				&:before {
 					display: none;
@@ -121,7 +121,7 @@
 							position: absolute;
 							top: 0;
 							right: 0;
-							width: 50%!important;
+							width: 50%;
 							color: $main-color;
 							background-color: $light-third-color;
 							border-radius: 8px;
@@ -174,7 +174,7 @@
 		display: block;
 		.site-info{
 			background: transparent;
-			bottom:-30rem;
+			bottom:-3rem;
 			&:before{
 				display: none;
 			}
@@ -255,7 +255,7 @@
 
 							div[id^="contact-form-"] {
 								position: relative;
-								width: 100%!important;
+								width: 100%;
 							}
 						}
 					}
@@ -265,9 +265,11 @@
 		.site-footer{
 				height: 90vh;
 				background-position: center left -350px;
+				
 				.site-info{
 					bottom: 0!important;
 					top:4rem;
+
 				}
 
 				#jetpack_widget_social_icons-2{
@@ -373,7 +375,7 @@
 				margin-top: 2rem;
 				.site-info{
 					bottom: 0!important;
-					top:10rem;
+					top:5rem;
 				}
 
 					#jetpack_widget_social_icons-2{
@@ -449,7 +451,7 @@
 						    	
 								div[id^="contact-form-"] {
 									position: relative;
-									width: 100%!important;
+									width: 100%;
 									
 									label{
 										font-weight: 600;
@@ -532,7 +534,7 @@
 						    	
 								div[id^="contact-form-"] {
 									position: relative;
-									width: 100%!important;
+									width: 100%;
 									
 									label{
 										font-weight: 600;
