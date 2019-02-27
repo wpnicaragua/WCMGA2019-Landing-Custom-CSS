@@ -4,13 +4,10 @@
  *
 ***************************************************************************************************/
 #main {
-	position: relative;
-	display: block;
-	padding: 20px 0;
-	width: 100%;
-	min-height: 650px;
-	background-color: $white;
-	
+	padding-bottom: 0px;
+	padding-top: 60px!important;
+	margin-top: 15rem;
+	background: transparent!important;
 
 	&:before,
 	&:after { @include clearfix; }
@@ -459,7 +456,7 @@
 
 .module-sponsors {
 	display: none;
-	//background-image: url("https://2018.managua.wordcamp.org/files/2018/03/waves.png");
+	background-image: url("https://2018.managua.wordcamp.org/files/2018/03/waves.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
