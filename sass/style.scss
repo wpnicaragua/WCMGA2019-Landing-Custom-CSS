@@ -5,19 +5,22 @@
 */
 
 // Global.
+
 @import "variables";
 @import "mixins";
 @import "layouts";
 @import "global";
-//@import "header";
+@import "header";
 //@import "navigation";
-//@import "footer";
+@import "footer";
 @import "forms";
 
 // Templates/Pages.
-//@import "./pages/content";
+@import "./pages/content";
 //@import "./pages/homepage";
-@import "./pages/llamado-a-ponentes";
+//@import "./pages/codigo-conducta";
+//@import "./pages/llamado-a-ponentes";
+
 //@import "./pages/organizers";
 //@import "./pages/speakers";
 //@import "./pages/schedule";

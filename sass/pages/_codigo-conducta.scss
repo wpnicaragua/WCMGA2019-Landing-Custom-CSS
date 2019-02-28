@@ -1,15 +1,25 @@
 /**************************************************************************************************
  *
- *  @Section: llamado-a-ponentes
+ *  @Section: Codigo de conducta
  *
 ***************************************************************************************************/
 
-.page-slug-call-for-speakers,
-.home.page-slug-call-for-speakers {
+.page-slug-codigo-de-conducta
+{
+	
 	
 
+
 	#main {
-		
+		padding-bottom: 0px;
+		padding-top: 60px!important;
+		background: transparent!important;
+		margin-top: 15rem;
+
+		&:after {
+			display: none;
+		}
+
 		#primary {
 			padding-top: 0px;
 
@@ -100,10 +110,10 @@
 
 }
 
+
 @media only screen and (max-width: $tablet-portrait) {
 
-	.page-slug-call-for-speakers,
-	.home.page-slug-call-for-speakers  {
+	.page-slug-codigo-de-conducta {
 	
 		
 
@@ -149,15 +159,14 @@
 				}
 			}
 		}
-		
+	
 	}
 }
 
 @media only screen and (max-width: $mobile) {
 		
-		.page-slug-call-for-speakers,
-		.home.page-slug-call-for-speakers  {
-			
+		.page-slug-codigo-de-conducta {
+		
 
 				#main {
 				
@@ -220,15 +229,14 @@
 					}
 				}
 			}
-			
+		
 	}
 }
 
 
 @media only screen and (max-width: $mobile-portrait) {
 		
-		.page-slug-call-for-speakers,
-		.home.page-slug-call-for-speakers  {
+		.page-slug-codigo-de-conducta  {
 			
 
 				#main {
@@ -282,14 +290,13 @@
 					}
 				}
 			}
-	
+		
 	}
 }
 
 @media only screen and (max-width: 360px) {
 		
-		.page-slug-call-for-speakers,
-		.home.page-slug-call-for-speakers  {
+		.page-slug-codigo-de-conducta {
 			
 
 				#main {
