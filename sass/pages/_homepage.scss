@@ -7,13 +7,15 @@
 	background-color: $white;
 
 	& + #main {
-		// padding-top: 150px;
+		padding-top: 150px;
 	}
 
 	& + #main #secondary {
 		top: 150px;
+
 	}
 }
+
 
 .module {
 	position: relative;
@@ -93,6 +95,9 @@
 			}
 
 			.title { color: $white; }
+		}
+		#primary-sidebar{
+			display: none;
 		}
 	}
 
