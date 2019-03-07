@@ -6,11 +6,12 @@
 .site-navigation {
 	
 	position: fixed;
-	top: 0;
+	top: 3rem;
 	left: 0;
 	width: 100%;
-	background-color: $white;
+	background-color: $main-color;
 	z-index: 1050;
+	color:$white;
 
 	.assistive-text { display:  none; }
 
@@ -35,8 +36,8 @@
 		> .menu-item {
 
 			a {
-				color: $default-text;
-				padding: 20px 15px;
+				color: $white;
+				padding: 25px 15px;
 				text-transform: uppercase;
 				font-family: $font-heading;
 				@include font-size(1.2);
@@ -91,18 +92,14 @@
 				}
 			}
 
-			&.get-tickets > a {
+			&.menu-item-600 > a {
 				position: relative;
 				width: 82px;
-				&:before {
-					display: block;
-				    //content: url(https://2017.managua.wordcamp.org/files/2017/04/tickets-here.png);
-				    position: absolute;
-				    top: 0;
-				    left: 0;
-				    width: 82px;
-				    height: 72px;
-				}
+				font-weight: 900;
+				background-color: $second-color;
+				border-radius: 30px;
+				padding: 15px;
+
 			}
 		}
 	}
