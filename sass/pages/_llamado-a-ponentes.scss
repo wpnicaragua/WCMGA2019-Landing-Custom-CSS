@@ -6,75 +6,10 @@
 
 .page-slug-call-for-speakers,
 .home.page-slug-call-for-speakers {
-	$header-height: 35vw;
-	$header-max-height: 600px;
 	
-	.site-header {
-		position: relative;
-		width: 100%;
-		height: 600px;
-		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/banner-wordpress.png');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		top:15rem;
-		
-		&:before {
-			display: none;
-			}
-
-		&:after {
-			display: none;
-			
-		}
-
-	hgroup {
-		position: relative;
-		display: block;
-	}
-
-		.site-title {
-			display: block;
-			position: absolute;
-			top:-48rem;
-			left: 3rem;
-			a {
-				display: block;
-				width: 250px;
-				height: auto;
-				margin: 0;
-				background-image: url("https://2019.managua.wordcamp.org/files/2019/01/logo-2019.png");
-				text-indent: -9999px;
-	          	background-repeat: no-repeat;
-				background-position: center center;
-				background-size: contain;
-
-			}
-		}
-
-		.site-description {
-			display: none;
-			margin-top: 20px;
-			color: $black;
-			text-transform: uppercase;
-		}
-	}
-	
-
-	#after-header-widgets {
-		display: none;
-	}
 
 	#main {
-		padding-bottom: 0px;
-		padding-top: 60px!important;
-		background: transparent!important;
-		margin-top: 15rem;
-
-		&:after {
-			display: none;
-		}
-
+		
 		#primary {
 			padding-top: 0px;
 
@@ -102,7 +37,7 @@
 			
 
 			#content {
-				//padding-right: initial;
+				padding-right: 0;
 	
 				&:before {
 					display: none;
@@ -121,7 +56,7 @@
 							position: absolute;
 							top: 0;
 							right: 0;
-							width: 50%!important;
+							width: 50%;
 							color: $main-color;
 							background-color: $light-third-color;
 							border-radius: 8px;
@@ -162,63 +97,15 @@
 		}
 	}
 
-	.site-footer {
-		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/avi-richards-183715-unsplashbanner.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		width: 100%;
-		height: 90vh;
-		max-height: initial;
-		min-height: initial;
-		display: block;
-		.site-info{
-			background: transparent;
-			bottom:-30rem;
-			&:before{
-				display: none;
-			}
-		}
-		#jetpack_widget_social_icons-2{
-			position: relative;
-			width: 100%;
-			top:30rem;
-			
-			.widget-title{
-				display: none;
-			}
-			
-			ul{
-				display: flex;
-				justify-content: center;
-			}
-			
-			.jetpack-social-widget-item{
-				a{
-					color:#fff!important;
-					padding: 5rem;
 
-				}
-				
-			}
-		}
-	}
 }
-
 
 @media only screen and (max-width: $tablet-portrait) {
 
 	.page-slug-call-for-speakers,
 	.home.page-slug-call-for-speakers  {
 	
-		.site-header {
-    	min-height: 300px;
-    	background-position: center left -400px;
-		background-size: 350% auto;
-	    	.site-title{
-	    		left: 35%;
-	    	}
-		}
+		
 
 		#main {
 			padding-left: initial;
@@ -262,27 +149,7 @@
 				}
 			}
 		}
-		.site-footer{
-				height: 70vh;
-				background-position: center left -350px;
-				.site-info{
-					bottom: 0!important;
-					top:20rem;
-				}
-
-				#jetpack_widget_social_icons-2{
-					
-					
-					.jetpack-social-widget-item{
-						a{
-							color:#fff!important;
-							padding: 3rem;
-
-						}
-						
-					}
-				}
-		}
+		
 	}
 }
 
@@ -290,20 +157,7 @@
 		
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
-			.site-header {
-		    	
-		    	background-position: center left -600px;
-				background-size: 500% auto;
-
-		    	.site-title{
-		    		
-		    		left:5rem;
-		    		a{
-		    			width: 500px;
-
-		    		}
-		    	}
-			}
+			
 
 				#main {
 				
@@ -366,51 +220,16 @@
 					}
 				}
 			}
-			.site-footer{
-				height: 90vh;
-				background-size: auto 100%;
-				background-position: center left -400px;
-				margin-top: 2rem;
-				.site-info{
-					bottom: 0!important;
-					top:10rem;
-				}
-
-					#jetpack_widget_social_icons-2{
-					
-					
-					.jetpack-social-widget-item{
-						a{
-							color:#fff!important;
-							padding: 3rem;
-
-						}
-						
-					}
-				}
-			}
+			
 	}
 }
+
 
 @media only screen and (max-width: $mobile-portrait) {
 		
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
-			.site-header {
-		    	
-		    	background-position: center left -500px;
-				background-size: 300% auto;
-
-		    	.site-title{
-		    		
-		    		left:calc(50% - 135px);
-
-			    		a{
-			    			width: 500px;
-
-			    		}
-			    	}
-				}
+			
 
 				#main {
 				
@@ -448,7 +267,7 @@
 						    	
 								div[id^="contact-form-"] {
 									position: relative;
-									width: 100%!important;
+									width: 100%;
 									
 									label{
 										font-weight: 600;
@@ -463,16 +282,7 @@
 					}
 				}
 			}
-			.site-footer{
-				height: 100vh;
-				min-height: 100vh;
-				background-position: center left -200px;
-				margin-top: 2rem;
-				.site-info{
-					bottom: 10rem!important;
-
-				}
-			}
+	
 	}
 }
 
@@ -480,21 +290,7 @@
 		
 		.page-slug-call-for-speakers,
 		.home.page-slug-call-for-speakers  {
-			.site-header {
-		    	
-		    	background-position: center left -500px;
-				background-size: 550% auto;
-
-		    	.site-title{
-		    		
-		    		left:calc(50% - 135px);
-
-			    		a{
-			    			width: 500px;
-
-			    		}
-			    	}
-				}
+			
 
 				#main {
 				
@@ -521,7 +317,7 @@
 					}
 
 					#content {
-												
+						
 						article {
 
 							.entry-content {
@@ -531,7 +327,7 @@
 						    	
 								div[id^="contact-form-"] {
 									position: relative;
-									width: 100%!important;
+									width: 100%;
 									
 									label{
 										font-weight: 600;
@@ -546,27 +342,6 @@
 					}
 				}
 			}
-			.site-footer{
-				height: 90vh;
-				
-				background-position: center left -200px;
-				margin-top: 2rem;
-				.site-info{
-					top:-5rem;
-					bottom: 0!important;
-				}
-				#jetpack_widget_social_icons-2{
-					top:20rem;
-					margin-bottom:2rem;
-					.jetpack-social-widget-item{
-						a{
-							color:#fff!important;
-							padding: 3rem;
-
-						}
-						
-					}
-				}
-			}
+			
 	}
 }
