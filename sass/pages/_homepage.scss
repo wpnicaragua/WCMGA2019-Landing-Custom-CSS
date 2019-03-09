@@ -4,14 +4,25 @@
  *
 ***************************************************************************************************/
 #after-header-widgets {
+	height: 0vh;
 	background-color: $white;
+	.widget_media_image{
+		position: relative;
+			z-index: 1000;
+			top:-45rem;
+			left:10rem;
+		img{
+			width: 25%;
+			
+		}	
+	}
 
 	& + #main {
-		padding-top: 150px;
+		padding-top: 0px;
 	}
 
 	& + #main #secondary {
-		top: 150px;
+		top: 0px;
 
 	}
 }

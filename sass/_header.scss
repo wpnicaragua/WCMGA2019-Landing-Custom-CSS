@@ -3,8 +3,7 @@
  *  @Section: Header
  *
 ***************************************************************************************************/
-$header-height: 35vw;
-	$header-max-height: 600px;
+
 	
 	.site-header {
 		position: relative;
@@ -22,8 +21,7 @@ $header-height: 35vw;
 
 		&:after {
 			display: none;
-			
-		}
+			}
 
 	hgroup {
 		position: relative;
