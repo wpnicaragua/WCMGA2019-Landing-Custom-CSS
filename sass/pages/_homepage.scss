@@ -3,6 +3,8 @@
  *  @Section: Homepage
  *
 ***************************************************************************************************/
+.home{
+
 #after-header-widgets {
 	height: 0vh;
 	background-color: $white;
@@ -19,6 +21,7 @@
 
 	& + #main {
 		padding-top: 0px;
+		margin-top: 0px;
 	}
 
 	& + #main #secondary {
@@ -27,6 +30,12 @@
 	}
 }
 
+.entry-header{
+	display: none;
+}
+
+
+#primary-sidebar{ display: none; }
 
 .module {
 	position: relative;
@@ -145,8 +154,23 @@
 	}
 }
 
-#main {
-	padding-top: 0;
+	#main {
+		padding-top: 0!important;
+	}
+	.site-content{
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-2.png');
+	}
+
+	.widget_text{
+		img{
+			width: 15%;
+		}
+	}
+
+	#footer-widget-1{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 @media only screen and (max-width: $tablet-landscape) {
