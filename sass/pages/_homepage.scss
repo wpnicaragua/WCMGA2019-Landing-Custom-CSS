@@ -6,18 +6,8 @@
 .home{
 
 #after-header-widgets {
-	height: 0vh;
-	background-color: $white;
-	.widget_media_image{
-		position: relative;
-			z-index: 1000;
-			top:-45rem;
-			left:10rem;
-		img{
-			width: 25%;
-			
-		}	
-	}
+	
+	
 
 	& + #main {
 		padding-top: 0px;
@@ -156,9 +146,13 @@
 
 	#main {
 		padding-top: 0!important;
+		min-height: 800px;
 	}
 	.site-content{
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-2.png');
+		background-size: 110%;
+		background-repeat: no-repeat;
+		min-height: 710px;
 	}
 
 	.widget_text{
@@ -170,6 +164,10 @@
 	#footer-widget-1{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#footer-widget-2{
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-3_comunidad.png');
 	}
 }
 
