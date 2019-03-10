@@ -9,16 +9,39 @@
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-WordCamp-2019.png');
 		background-size: cover;
 		height: 60vh;
+		
+		.textwidget{
+			max-height: 1000px;
+			height: 100%;
+		}
 
 		img{
 			position: relative;
 			top:15rem;
 			left: 15rem;
 		}
+
 		.banner{
 			position: relative;
-			top: 15rem;
-			left: 50rem;
+			float: right;
+			text-align: right;
+			max-width: 500px;
+			top:-15%;
+			left:-8%;
+			h2{
+				font-size: 5rem;
+				line-height: 1;
+				color:#ffffff;
+			}
+			a{
+				width: 200px;
+				font-weight: 900;
+				background-color: $second-color;
+				border-radius: 30px;
+				padding: 15px;
+				color:#ffffff;
+				text-align: center;
+			}
 		}
 	}
 
