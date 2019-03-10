@@ -6,7 +6,7 @@
 #main {
 	padding-bottom: 0px;
 	padding-top: 60px!important;
-	margin-top: 15rem;
+	//margin-top: 15rem;
 	background: transparent!important;
 
 	&:before,
@@ -181,7 +181,6 @@
 			white-space: nowrap;
     	overflow: hidden;
     	height: 150px;
-
 
 			&:before {
 				content: "¿Tienes una alergia que pone en peligro tu vida y que affectaría tu experiencia en WordCamp? *";
@@ -700,13 +699,6 @@
 #main{
 	padding-top: 0!important;
 	}
-
-.home{
-	#main{
-		padding-top: 150px!important;
-	}
-}
-
 
 
 @media only screen and (max-width: $tablet-portrait) {

@@ -3,17 +3,69 @@
  *  @Section: Homepage
  *
 ***************************************************************************************************/
+.home{
+
+	#custom_html-3{
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-WordCamp-2019.png');
+		background-size: cover;
+		height: 60vh;
+		
+		.textwidget{
+			max-height: 1000px;
+			height: 100%;
+		}
+
+		img{
+			position: relative;
+			top:15rem;
+			left: 15rem;
+		}
+
+		.banner{
+			position: relative;
+			float: right;
+			text-align: right;
+			max-width: 500px;
+			top:-15%;
+			left:-8%;
+			h2{
+				font-size: 5rem;
+				line-height: 1;
+				color:#ffffff;
+			}
+			a{
+				width: 200px;
+				font-weight: 900;
+				background-color: $second-color;
+				border-radius: 30px;
+				padding: 15px;
+				color:#ffffff;
+				text-align: center;
+			}
+		}
+	}
+
 #after-header-widgets {
-	background-color: $white;
+	
+	
 
 	& + #main {
-		// padding-top: 150px;
+		padding-top: 0px;
+		margin-top: 0px;
 	}
 
 	& + #main #secondary {
-		top: 150px;
+		top: 0px;
+
 	}
 }
+
+.entry-header{
+	display: none;
+}
+
+
+#primary-sidebar{ display: none; }
 
 .module {
 	position: relative;
@@ -94,6 +146,9 @@
 
 			.title { color: $white; }
 		}
+		#primary-sidebar{
+			display: none;
+		}
 	}
 
 	&-community {
@@ -129,8 +184,31 @@
 	}
 }
 
-#main {
-	padding-top: 0;
+	#main {
+		padding-top: 0!important;
+		min-height: 800px;
+	}
+	.site-content{
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-2.png');
+		background-size: 110%;
+		background-repeat: no-repeat;
+		min-height: 710px;
+	}
+
+	.widget_text{
+		img{
+			width: 15%;
+		}
+	}
+
+	#footer-widget-1{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#footer-widget-2{
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-3_comunidad.png');
+	}
 }
 
 @media only screen and (max-width: $tablet-landscape) {
