@@ -5,6 +5,23 @@
 ***************************************************************************************************/
 .home{
 
+	#custom_html-3{
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-WordCamp-2019.png');
+		background-size: cover;
+		height: 60vh;
+
+		img{
+			position: relative;
+			top:15rem;
+			left: 15rem;
+		}
+		.banner{
+			position: relative;
+			top: 15rem;
+			left: 50rem;
+		}
+	}
+
 #after-header-widgets {
 	
 	
