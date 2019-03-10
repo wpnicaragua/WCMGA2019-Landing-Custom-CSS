@@ -59,11 +59,28 @@
 
 	}
 }
-
+#primary{
+	padding: 0;
+}
 .entry-header{
 	display: none;
 }
 
+.entry-content{
+	color: #ffffff!important;
+	font-size: 2rem;
+	h1{
+		color: #ffffff!important;
+		font-weight: 900!important;
+		span{font-weight: 900!important}
+	}
+
+	h3{
+		font-weight: 900!important;
+		color: #ffffff!important;
+		span{font-weight: 900!important}
+	}
+}
 
 #primary-sidebar{ display: none; }
 
@@ -188,11 +205,28 @@
 		padding-top: 0!important;
 		min-height: 800px;
 	}
-	.site-content{
+	#text-6{
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-2.png');
 		background-size: 110%;
 		background-repeat: no-repeat;
 		min-height: 710px;
+		padding: 50px 300px 200px 60px;
+		color: #ffffff;
+		font-size: 2.2rem;
+		line-height: 1.2;
+		.textwidget{
+			width: 70%;
+		}
+		p:first-child{
+			font-weight: 900;
+			margin-bottom: 2rem;
+			font-size: 2.6rem;
+		}
+
+		h1{
+			color: #ffffff;
+
+		}
 	}
 
 	.widget_text{
