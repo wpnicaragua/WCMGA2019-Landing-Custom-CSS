@@ -550,7 +550,7 @@
 		}
 	}
 
-	&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
+	&.widget_wpcom_social_media_icons_widget {
 		position: absolute;
 		bottom: 70px;
 		z-index: 1000;
@@ -656,23 +656,7 @@
 		}
 	}
 
-	.widget {
-
-		&.wcb_widget_sponsors {
-
-			.sponsor-level{
-				display: block;
-				text-align: center;
-
-				&-title{ width: 100%; }
-
-				.sponsor-logo {
-					text-align: center;
-			    width: 100%;
-			  }
-			}
-		}
-	}
+	
 
 	.wcorg-speaker {
     padding-top: 70px;
@@ -741,14 +725,7 @@
 
 	.widget {
 
-		&.wcb_widget_sponsors {
-
-			.sponsor-level{
-				width: 100%;
-			}
-		}
-
-		&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
+		&.widget_wpcom_social_media_icons_widget {
 			bottom: 100px;
 		}
 	}
