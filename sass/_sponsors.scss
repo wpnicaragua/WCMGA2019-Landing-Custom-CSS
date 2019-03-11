@@ -1,6 +1,6 @@
 /**************************************************************************************************
  *
- *  @Section: Homepage
+ *  @Section: sponsors
  *
 ***************************************************************************************************/
 #footer-widget-1{
@@ -20,32 +20,21 @@
 		}
 	}
 
-		#wcb_sponsors-2{
-			display: flex;
-			margin:0 auto;
-			flex-direction: column;
-			justify-content: center;
-			margin-bottom: 2.1rem;
-			text-align: center!important;
+		#wcb_widget_sponsors{
+	
 
 		.sponsor-level{
-			//display: block;
-			//padding: 70px 20px 40px;
 			display: flex;
 		    flex-direction: row;
 		    flex-wrap: wrap;
 		    justify-content: center;
 		    align-items: center;
-		    //align-content: stretch;
 		    width: 100%;
-		    margin-bottom: 50px;
-
+		    
 			.sponsor-logo {
 				text-align: center;
-			    display: inline-block !important;
 			    padding: 20px;
-			    flex-basis: 33.333%;
-			    align-self: center;
+			    
 			}
 
 		}
