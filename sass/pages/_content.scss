@@ -529,74 +529,7 @@
 		}
 	}
 
-	&.wcb_widget_sponsors {
-		display: none; // display: -ms-flexbox;
-    display: none; // display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: flex-start;
-    align-items: flex-start;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    padding: 0 10%;
-
-		.sponsor-level {
-	    position: relative;
-	    padding: 70px 20px 40px;
-			display: -ms-flexbox;
-	    display: flex;
-	    -ms-flex-direction: row;
-	    flex-direction: row;
-	    -ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	    -ms-flex-pack: center;
-	    justify-content: center;
-	    -ms-flex-align: center;
-	    align-items: center;
-	    -ms-flex-line-pack: stretch;
-	    align-content: stretch;
-	    width: 50%;
-	    margin-bottom: 50px;
-
-			&:before,
-			&:after { @include clearfix; }
-
-			&:after { @include clearfix-after; }
-
-			&-title {
-				color: $fourth-color;
-				text-transform: uppercase;
-				text-align: center;
-				position: absolute;
-		    top: 0;
-		    display: block;
-		    text-align: center;
-		    @include centered-x;
-				@include font-size(2.6);
-			}
-
-			.sponsor-logo {
-				text-align: center;
-		    display: inline-block !important;
-		    padding: 20px;
-		    flex-basis: 33.333%;
-		    align-self: center;
-			}
-
-			&.platinium { width: 100%;
-
-				.sponsor-level-title {
-					@include font-size(3.2);
-				}
-
-				.sponsor-logo { flex-basis: 50%; }
-			}
-		}
-	}
+	
 
 	&.widget_wpcom_social_media_icons_widget {
 

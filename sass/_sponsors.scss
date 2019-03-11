@@ -1,0 +1,83 @@
+/**************************************************************************************************
+ *
+ *  @Section: Homepage
+ *
+***************************************************************************************************/
+#footer-widget-1{
+
+	background: #ffffff!important;
+
+	#text-5{
+		width: 50%;
+		margin: 0 auto;
+		h1{
+			display: block;
+			font-size: 3.5rem;
+			
+		}
+		.textwidget{
+			text-align: center;
+		}
+	}
+
+		#wcb_sponsors-2{
+			display: flex;
+			margin:0 auto;
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 2.1rem;
+			text-align: center!important;
+
+		.sponsor-level{
+			//display: block;
+			//padding: 70px 20px 40px;
+			display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		    align-items: center;
+		    //align-content: stretch;
+		    width: 100%;
+		    margin-bottom: 50px;
+
+			.sponsor-logo {
+				text-align: center;
+			    display: inline-block !important;
+			    padding: 20px;
+			    flex-basis: 33.333%;
+			    align-self: center;
+			}
+
+		}
+	}
+
+	#custom_html-4{
+		width: 50%;
+		margin: 0 auto;
+		h1{
+			display: block;
+			font-size: 3.5rem;
+			line-height: 1.2;
+			
+		}
+		.textwidget{
+			text-align: center;
+			a{
+				width: 200px;
+				font-weight: 900;
+				background-color: $second-color;
+				border-radius: 30px;
+				padding: 15px;
+				color:#ffffff;
+				text-align: center;
+				margin:0 auto;
+			}
+		}
+	}
+}
+
+	   
+
+
+
+			
