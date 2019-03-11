@@ -4,28 +4,40 @@
  *
 ***************************************************************************************************/
 	.site-footer {
-		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/avi-richards-183715-unsplashbanner.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		width: 100%;
-		height: 90vh;
-		max-height: initial;
-		min-height: initial;
-		display: block;
-		.site-info{
-			background: transparent;
-			bottom:-3rem;
-			&:before{
-				
-				display: none;
-			}
-		}
-		#jetpack_widget_social_icons-2{
+		#footer-widget-5{
 			position: relative;
-			width: 100%;
-			top:30rem;
+			top:60rem;
+			z-index: 1000;
+			margin:0 auto;
+			border-bottom: 1.5px solid #ffffff; 
+
+			#custom_html-5{
+				margin: 0 auto;
+				.custom-html-widget{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					img{
+						width: 20%;
+						margin: 0 auto;
+					}
+
+					ul{
+						display: flex;
+						list-style: none;
+						a{
+							color:#ffffff;
+							padding: 5px;
+							margin:5px;
+						}
+					}
+				}
+			}
+
+			#jetpack_widget_social_icons-2{
 			
+
 			.widget-title{
 				display: none;
 			}
@@ -44,6 +56,22 @@
 				
 			}
 		}
+		}
+		.site-info{
+			background: transparent;
+			bottom:-3rem;
+			background-image: url('https://2019.managua.wordcamp.org/files/2019/01/avi-richards-183715-unsplashbanner.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		width: 100%;
+		height: 90vh;
+		max-height: initial;
+		min-height: initial;
+		display: block;
+			
+		}
+		
 	}
 
 @media only screen and (max-width: $breakpoint) {
