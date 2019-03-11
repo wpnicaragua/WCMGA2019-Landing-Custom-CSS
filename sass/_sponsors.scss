@@ -5,7 +5,7 @@
 ***************************************************************************************************/
 #footer-widget-1{
 
-	background: #000000 no-repeat;
+	background: #ffffff!important;
 
 	#text-5{
 		width: 50%;
@@ -29,15 +29,15 @@
 			text-align: center!important;
 
 		.sponsor-level{
-			display: block;
-			padding: 70px 20px 40px;
+			//display: block;
+			//padding: 70px 20px 40px;
 			display: flex;
 		    flex-direction: row;
 		    flex-wrap: wrap;
 		    justify-content: center;
 		    align-items: center;
-		    align-content: stretch;
-		    width: 50%;
+		    //align-content: stretch;
+		    width: 100%;
 		    margin-bottom: 50px;
 
 			.sponsor-logo {
