@@ -54,20 +54,7 @@
 		}
 	}
 
-#after-header-widgets {
-	
-	
 
-	& + #main {
-		padding-top: 0px;
-		margin-top: 0px;
-	}
-
-	& + #main #secondary {
-		top: 0px;
-
-	}
-}
 
 #primary{
 	padding: 0;
@@ -93,36 +80,6 @@
 
 #primary-sidebar{ display: none; }
 
-#footer-widget-1{
-	background: #ffffff no-repeat;
-
-	#text-5{
-		width: 50%;
-		margin: 0 auto;
-		h1{
-			display: block;
-			font-size: 3.5rem;
-			
-		}
-		.textwidget{
-			text-align: center;
-		}
-	}
-
-	#custom_html-4{
-		width: 50%;
-		margin: 0 auto;
-		h1{
-			display: block;
-			font-size: 3.5rem;
-			line-height: 1.2;
-			
-		}
-		.textwidget{
-			text-align: center;
-		}
-	}
-}
 
 	#main {
 		padding-top: 0!important;
@@ -231,13 +188,7 @@
 
 	}
 
-	#wcb_sponsors-2{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-bottom: 2rem;
-		text-align: center;
-	}
+
 }
 
 @media only screen and (max-width: $tablet-landscape) {
