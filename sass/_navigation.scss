@@ -52,7 +52,7 @@
 			}
 
 			> .sub-menu {
-				display: none;
+				background-color: $second-color;
 				@include transition;
 				a{color:$white;}
 
@@ -71,7 +71,7 @@
 						align-items: stretch;
 						flex-wrap: nowrap;
 						position: absolute;
-						background-color: $light-third-color;
+						background-color: $second-color;
 						@include box-shadow;
 
 						.menu-item {
@@ -84,7 +84,7 @@
 							&:hover,
 							&:focus,
 							&:active {
-								color: $second-color;
+								color: $white;
 								background-color: $third-color;
 
 							}
