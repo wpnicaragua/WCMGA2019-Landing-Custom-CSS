@@ -50,6 +50,9 @@
 				padding: 15px;
 				color:#ffffff;
 				text-align: center;
+				&:hover{
+							box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+						}
 			}
 		}
 	}
@@ -158,6 +161,9 @@
 						color:#ffffff;
 						text-align: center;
 						margin:0 auto;
+						&:hover{
+							box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+						}
 					}
 				}
 			}
