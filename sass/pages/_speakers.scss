@@ -3,8 +3,16 @@
  *  @Section: speakers
  *
 ***************************************************************************************************/
-.page-slug-ponentes {
+//Hide Widget
+#after-header-widgets, #after-header-widgets + #main #secondary{
+	display: none;
+}
 
+
+.page-slug-ponentes-diseno {
+	.grav-clone-a{
+		display: none !important;
+	}
 	#primary {
 		#content {
 	    padding-right: 0;
@@ -16,18 +24,22 @@
 	}
 
 	.wcorg-speakers{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        display: grid;
+    	grid-template-columns: repeat( 3, minmax( 200px, 1fr ) );
+    	grid-column-gap: 13px;
 	}
 
 	.wcorg-speaker {
 		margin-bottom: 25px;
 		width: 100%;
-		display: inline-block;
-		float: left;
+		display: grid;
+		grid-template-columns: 1fr;
+		background-color: #ffc368;
+		.wcorg-speaker-description{
+			display: grid;
+			grid-template-columns: 1fr;
+			padding: 5px;
+		}
 
 		@media only screen and (min-width: $desktop) {
 	    -webkit-box-flex: 0;
