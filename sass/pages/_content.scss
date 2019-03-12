@@ -453,6 +453,37 @@
 }
 
 
+.module-sponsors {
+	display: none;
+	background-image: url("https://2018.managua.wordcamp.org/files/2018/03/waves.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	min-height: 380px;
+	text-align: center;
+	color: $white;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 100px;
+		display: block;
+		width: 261px;
+		height: 30px;
+		//background-image: url("https://2018.managua.wordcamp.org/files/2018/03/icon-waves.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		@include centered-x;
+	}
+
+	.title {
+		margin-top: 100px;
+		color: $white;
+		@include font-size(4);
+	}
+}
+
 
 .widget {
 
@@ -578,7 +609,6 @@
 		}
 	}
 }
-
 
 
 /*================================
