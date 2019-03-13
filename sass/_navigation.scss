@@ -6,7 +6,7 @@
 .site-navigation {
 	
 	position: fixed;
-	top: 3rem;
+	//top: 3rem;
 	left: 0;
 	width: 100%;
 	background-color: $main-color;
@@ -38,7 +38,7 @@
 
 			a {
 				color: $white;
-				padding: 25px 15px;
+				padding: 20px 15px;
 				text-transform: uppercase;
 				font-family: $font-heading;
 				@include font-size(1.2);
@@ -52,6 +52,7 @@
 			}
 
 			> .sub-menu {
+				display: none;
 				background-color: $second-color;
 				@include transition;
 				a{color:$white;}
