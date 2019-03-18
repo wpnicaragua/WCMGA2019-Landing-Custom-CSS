@@ -72,10 +72,9 @@
 
 	.site-header {
 		    	
-		    	height: 0;
+		    	height: 0!important;
 		    	.site-title{
 		    		
-		    		left:5rem;
 		    		a{
 		    			width: 500px;
 
@@ -106,7 +105,7 @@
 			
 	}
 
-	//@media only screen and (max-width: 360px) {
+	@media only screen and (max-width: 360px) {
 		
 		
 			.site-header {
@@ -125,5 +124,5 @@
 				}
 
 				
-	//}
+}
 
