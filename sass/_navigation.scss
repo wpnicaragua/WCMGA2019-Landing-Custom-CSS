@@ -111,22 +111,30 @@
     padding-right: 50px;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $mobile) {
 
 	.site-navigation {
+		display: flex;
+		flex-direction: column;
 		position: absolute;
-		background-color: transparent;
-
+		width: 100%;
+		padding: 0px;
+		top:0;
+		padding: 20px;
+		
+		
 		.menu-toggle {
+			
 			visibility: hidden;
-
+			margin: 0 auto;
 			&:after {
+				margin:0 auto;
 				content: '\f0c9';
 				font-family: 'fontawesome';
 				visibility: visible;
 				position: absolute;
 				top: 15px;
-				right: 15px;
+				right: calc(50% - 15px);
 				display: inline-block;
 				padding: 5px 10px;
 				color: $white;
@@ -154,7 +162,7 @@
 			.menu {
 				display: none;
 				background-color: $third-color;
-				padding: 50px 0;
+				padding: 10px 0;
 				flex-direction: column;
 				align-items: stretch;
 

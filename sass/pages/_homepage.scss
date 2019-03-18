@@ -208,19 +208,109 @@
 	}
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $mobile) {
 
-	.module {
+	
+	#after-header-widgets {
+		#custom_html-3{
+			background: transparent;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.textwidget{
+				flex-direction: column;
+				img{
+					width: 50%;
+					margin: 20px auto;
+					position: relative;
+					top:3rem;
+					left:0rem;
 
-		&-intro {
+				}
+			}
+			.banner{
+				position: static;
+				margin-top: 1.5rem;
+				text-align: center;
 
-			.intro-header {
-		    width: 90%;
-    		float: right;
+				h2{
+					color: $main-color;
+					font-size: 3.5rem;
+					margin-top: 1.5rem;
+				}
+				a{
+					&:after{
+						content: '\f145';
+						font-family: 'fontawesome';
+						margin-left: 0.5rem;
+					}
+				}
 			}
 		}
 	}
 
-	#after-header-widgets {}
+	#text-6{
+		h1{
+			color:$main-color!important;
+			text-align: center;
+		}
+		background: #ffffff!important;
+		color:$main-color!important;
+		padding: 20px!important;
+		.textwidget{
+			width: 100%!important;
+		}
+	}
+
+	#custom_html-6{
+		top:0!important;
+	
+	.links{
+				display: block!important;
+				margin:0 20px;
+				width: 100%;
+				
+				.link-ponentes,
+				.link-programa,
+				.link-ticket{
+					margin: 20px 10px!important;
+					box-shadow: none!important;
+					padding: 20px 0px!important;
+
+				}
+				
+			}
+	}
+
+	#custom_html-2{
+		padding: 15px 10px!important;
+		background-size: 250%!important;
+		background-position: center!important;
+		.textwidget{
+			margin:0 !important;
+			text-align: center;
+			h2{
+				margin:0!important;
+				margin-top: 2.5rem!important;
+				width: 100%!important;
+				font-weight: 900!important;
+				font-size: 2.5rem!important;
+			}
+			img{
+				width: 40%;
+			}
+		}
+		.custom-html-widget{
+			flex-direction: column;
+		}
+	}
+
+	#content{
+		display: block!important;
+		width: 100%!important;
+		padding: 20px!important;
+	}
+
 
 }
