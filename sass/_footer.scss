@@ -106,7 +106,7 @@
 				
 				.site-info{
 					bottom: 0!important;
-					top:-5rem;
+					top:3rem;
 					height: 90vh;
 					background-size: 400%!important;
 					background-position: top 200px left -250px;
@@ -160,11 +160,10 @@
 		
 		.site-footer{
 				height: 90vh;
-				
-				background-position: center left -200px;
-				margin-top: 2rem;
+				background-position: center left -200px!important;
+				margin-top: 0rem;
 				.site-info{
-					top:-5rem;
+					top:15rem;
 					bottom: 0!important;
 				}
 				#jetpack_widget_social_icons-2{
