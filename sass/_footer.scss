@@ -103,13 +103,14 @@
 
 @media only screen and (max-width: $mobile){
 	.site-footer{
-				height: 90vh;
-				background-size: auto 100%;
-				background-position: center left -400px;
-				margin-top: 2rem;
+				
 				.site-info{
 					bottom: 0!important;
-					top:5rem;
+					top:-5rem;
+					height: 90vh;
+					background-size: 400%!important;
+					background-position: top 200px left -250px;
+					margin-top: 0;
 				}
 
 					#jetpack_widget_social_icons-2{
@@ -118,11 +119,23 @@
 					.jetpack-social-widget-item{
 						a{
 							color:#fff!important;
-							padding: 3rem;
+							padding: 1rem!important;
 
 						}
 						
 					}
+				}
+			}
+
+			#custom_html-5{
+				.textwidget{
+					img{
+						width: 60%!important;
+						margin-bottom: 2rem!important;
+					}
+				}
+				ul.foot-menu{
+					display: none!important;
 				}
 			}
 }

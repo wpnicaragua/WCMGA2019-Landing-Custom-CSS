@@ -115,7 +115,25 @@
 }
 
 	   
+@media only screen and (max-width: $mobile) {
+#blog_subscription-2{
+		padding: 1rem!important;
+		#subscribe-blog-blog_subscription-2{
+			width: 100%!important;
+			#subscribe-email{
+				width: 100%!important;
+			}
+		}
+	}
+	
+	#text-5{
+		width: 100%!important;
+	}
 
+	#custom_html-4{
+		width: 100%!important;
+	}
+}
 
 
 			
