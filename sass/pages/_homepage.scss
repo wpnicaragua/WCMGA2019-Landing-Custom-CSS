@@ -310,7 +310,7 @@
 
 }
 
-//@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $breakpoint) {
 	#custom_html-3{
 		background-position: center left -277px!important;
 		.textwidget{
@@ -335,7 +335,7 @@
 		padding: 20px 30px 20px 30px!important;
 		background-size: 220%!important;
 	}
-//}
+}
 
 @media only screen and (max-width: $tablet-portrait) {
 .site-header{
