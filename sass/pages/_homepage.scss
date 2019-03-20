@@ -20,7 +20,7 @@
 		height: 60vh;
 		
 		.textwidget{
-			max-height: 500px;
+			max-height: 500px!important;
 			height: 100%;
 			margin-bottom: 2rem!important;
 		}
@@ -385,5 +385,19 @@
 	#text-6{
 		padding: 20px 30px 20px 30px!important;
 		background-size: 140%!important;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#custom_html-3{
+
+		.textwidget{
+			display: flex;
+			margin-top: 8rem!important;
+			img{ 
+			left: 0!important;
+		 }
+		}
+		
 	}
 }
