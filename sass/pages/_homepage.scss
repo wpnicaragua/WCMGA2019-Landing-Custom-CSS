@@ -315,3 +315,58 @@
 
 
 }
+
+@media only screen and (max-width: $tablet-portrait) {
+.site-header{
+	height: 0!important;
+}
+
+#custom_html-3{
+	    background-position-x: -900px!important;
+	    img{
+	    	top:35%!important;
+	    	left:5rem!important;
+	    	width: 30%!important;
+	    }
+}
+
+#after-header-widgets{
+	width: 100%!important;
+	margin-right: 0;
+}
+
+#custom_html-3 {
+    
+    width: 100%!important;
+}
+
+#custom_html-6 {
+    .links{
+		width: 80%!important;
+		display: block!important;
+
+				.link-ponentes,
+				.link-programa,
+				.link-ticket{
+					margin: 35px 40px!important;
+					
+
+				}
+    }
+   
+}
+
+#text-6{
+	padding: 20px 30px 20px 30px!important;
+	font-size: 2rem!important;
+	background-size: 212%!important;
+		.textwidget {
+	    width: 100%!important;
+		}
+}
+
+#content{
+	display: block!important;
+}
+
+}
