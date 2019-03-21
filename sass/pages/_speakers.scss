@@ -33,12 +33,28 @@
 		margin-bottom: 25px;
 		width: 100%;
 		display: grid;
-		grid-template-columns: 1fr;
-		background-color: #ffc368;
+		background-color: $light-gray;
+	    box-shadow: 0 15px 35px rgba(50,50,90,.1), 0 5px 15px rgba(0,0,0,.07);
+		grid-template-areas: "color-bar" "name" "info";
 		.wcorg-speaker-description{
+			grid-area: info;
 			display: grid;
 			grid-template-columns: 1fr;
 			padding: 5px;
+			position: relative;
+			img{
+				border-radius: 50%;
+				box-shadow: 0px 10px 0 0 $second-color !important;
+				position: absolute;
+				top:-180px !important;
+				&:before{
+					content: '';
+					width: 100%;
+					display: block;
+					height: 120px;
+					background: $second-color;
+				}
+			}
 		}
 
 		@media only screen and (min-width: $desktop) {
