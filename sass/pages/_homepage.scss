@@ -224,10 +224,12 @@
 
 				}
 			}
+			
 			.banner{
-				position: static;
+				margin: 0 auto; 
 				margin-top: 1.5rem;
 				text-align: center;
+				width: 100%;
 
 				h2{
 					color: $main-color;
@@ -419,7 +421,7 @@
 	#custom_html-3{
 
 		.textwidget{
-			display: flex;
+			
 			margin-top: 8rem!important;
 			img{ 
 			left: 0!important;
