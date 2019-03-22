@@ -12,12 +12,14 @@
 	}
 
 	#custom_html-3{
+
 		//background: #fff fixed no-repeat center;
 		//background-size: cover;
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-WordCamp-2019.png');
 		background-size:cover;
 		//background-position: center top 18%;
 		height: 60vh;
+		padding: 5rem;
 		
 		.textwidget{
 			max-height: 500px!important;
@@ -93,8 +95,7 @@
 		min-height: 800px;
 	}
 	#text-6{
-		//background: #fff fixed no-repeat center;
-		//background-size: cover;
+		
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-2.png');
 		background-size: 110%;
 		background-repeat: no-repeat;
@@ -422,7 +423,12 @@
 
 		.textwidget{
 			
-			margin-top: 8rem!important;
+			margin-top: 10rem!important;
+
+			.banner{
+				left: 0;
+				width: 100%;
+			}
 			img{ 
 			left: 0!important;
 		 }
