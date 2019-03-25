@@ -173,7 +173,11 @@
 		background: #fff fixed no-repeat 50% 50%;
 		background-size: cover;
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-3_comunidad.png');
-		
+		.textwidget{
+			img{
+				width: 20%;
+			}
+		}
 		.custom-html-widget{
 			display: flex;
 			justify-content: center;
