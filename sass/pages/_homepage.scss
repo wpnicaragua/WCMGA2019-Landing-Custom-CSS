@@ -14,8 +14,10 @@
 		height: 80vh;
 		
 
-		.textwidget{
+		.custom-html-widget{
+
 			height: 100%;
+			max-height: initial!important;
 			margin-bottom: 2rem!important;
 			display: flex;
 			justify-content: space-around;
@@ -24,17 +26,21 @@
 		img{
 			width: auto;
 			height: auto;
+			top:0;
+			left: 0;
 		}
 
 
 		.banner{
 			text-align: right;
 			max-width: 500px;
-			
+			top:0;
+			left: 0;
 			h2{
 				font-size: 4rem;
 				line-height: 1;
 				color:#ffffff;
+				font-weight: 700!important;
 			}
 			span{
 				color:$second-color;
