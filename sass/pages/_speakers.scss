@@ -3,31 +3,85 @@
  *  @Section: speakers
  *
 ***************************************************************************************************/
-.page-slug-ponentes {
+//Hide Widget
+#after-header-widgets, #after-header-widgets + #main #secondary{
+	display: none;
+}
 
+//Re ajuste de padding.
+body.page.page-id-8 #content {
+    padding-right: 0 !important;
+}
+
+.page-id-8 {
+	.grav-clone-a{
+		display: none !important;
+	}
 	#primary {
 		#content {
 	    padding-right: 0;
 		}
 	}
 
+
+
 	#secondary {
 		display: none;
 	}
 
 	.wcorg-speakers{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        display: grid;
+    	grid-template-columns: repeat( 2, minmax( 200px, 1fr ) );
+    	grid-column-gap: 33px;
 	}
 
 	.wcorg-speaker {
 		margin-bottom: 25px;
 		width: 100%;
-		display: inline-block;
-		float: left;
+		display: grid;
+		background-color: $light-gray;
+	    box-shadow: 0 10px 10px rgba(50, 50, 90, 0.1), 0 5px 10px rgba(0, 0, 0, 0.07);
+		grid-template-areas: "name" "info";
+		padding: 1rem 1.2rem;
+		h2{
+			grid-area: name;
+			color: $third-color !important;
+			text-shadow: 1px 1px, $light-second-color 2px 2px,$light-second-color 3px 3px, $light-second-color 4px 4px;
+		}
+		.wcorg-speaker-description{
+			grid-area: info;
+			display: grid;
+			grid-template-areas: 
+			"img p1"
+			"p2 p3";
+			grid-row-gap: 20px;
+			grid-column-gap: 20px;
+			padding: 6px 12px;
+			img{
+				align-self: center;
+				justify-self: center;
+				grid-area: img;
+				max-width: 120px;
+				min-width: 120px;
+				border-radius: 50%;
+				box-shadow: 0px 0px 0px 10px $light-second-color !important;
+				transition: box-shadow $transicion;
+				&:hover{
+					box-shadow: 0px 0px 15px 10px $light-second-color !important;
+				}
+			}
+			p{	
+				align-self: center;
+				justify-self: center;
+				margin: 0 !important;
+				padding: 10px;	
+				align-self: start;
+			    justify-self: center;
+			    margin: 0 !important;
+			    padding: 10px 0;
+			    min-width: 150px;
+			}
+		}
 
 		@media only screen and (min-width: $desktop) {
 	    -webkit-box-flex: 0;
@@ -41,7 +95,7 @@
 
 		&:after { @include clearfix-after; }
 	}
-
+	/*
 	.wcorg-speaker-description{
 		position: relative;
 		padding-left: 150px;
@@ -58,4 +112,5 @@
 			margin: 10px 5px 10px 0;
 		}
 	}
+	*/
 }
