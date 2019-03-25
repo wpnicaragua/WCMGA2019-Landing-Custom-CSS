@@ -3,45 +3,106 @@
  *  @Section: speakers
  *
 ***************************************************************************************************/
-.page-slug-ponentes {
 
+//Re ajuste de padding.
+body.page.page-id-8 #content {
+    padding-right: 0 !important;
+}
+
+.page-id-8 {
+	.grav-clone-a{
+		display: none !important;
+	}
 	#primary {
 		#content {
-	    padding-right: 0;
+		    padding-right: 0;
+		    @include mq('tablet','max'){
+		    	padding:0 !important;
+		    }
 		}
 	}
+
+
 
 	#secondary {
 		display: none;
 	}
 
 	.wcorg-speakers{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        display: grid;
+    	grid-template-columns: repeat( 2, minmax( 200px, 1fr ) );
+    	grid-column-gap: 33px;
+    	@include mq('tablet','max'){
+    		grid-template-columns: 1fr !important;
+    		grid-column-gap: 0px;
+    	}
 	}
 
 	.wcorg-speaker {
 		margin-bottom: 25px;
 		width: 100%;
-		display: inline-block;
-		float: left;
-
-		@media only screen and (min-width: $desktop) {
-	    -webkit-box-flex: 0;
-	    -ms-flex: 0 0 50%;
-	    flex: 0 0 50%;
-	    max-width: 50%;
+		max-width: 100% !important;
+		display: grid !important;
+		background-color: $light-gray;
+	    box-shadow: 0 10px 10px rgba(50, 50, 90, 0.1), 0 5px 10px rgba(0, 0, 0, 0.07);
+		grid-template-areas: 
+		"name" 
+		"info";
+		grid-template-rows: auto 1fr;
+		padding: 1rem 1.2rem;
+		
+		h2{
+			grid-area: name;
+			color: $third-color !important;
+			text-shadow: 1px 1px, $light-second-color 2px 2px,$light-second-color 3px 3px, $light-second-color 4px 4px;
 		}
-
-		&:before,
-		&:after { @include clearfix; }
-
-		&:after { @include clearfix-after; }
+		.wcorg-speaker-description{
+			grid-area: info;
+			display: grid;
+			grid-template-areas: 
+			"img p1"
+			"p2 p3";
+			grid-template-rows: repeat(auto-fit, auto);
+			grid-row-gap: 20px;
+			grid-column-gap: 20px;
+			padding: 6px 12px;
+			@include mq('tablet','max'){
+				grid-template-areas: "img" "p1" "p2" "p3";
+				grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+			} 
+			img{
+				align-self: center;
+				justify-self: center;
+				grid-area: img;
+				max-width: 120px;
+				min-width: 120px;
+				border-radius: 50%;
+				box-shadow: 0px 0px 0px 10px $light-second-color !important;
+				transition: box-shadow $transicion;
+				&:hover{
+					box-shadow: 0px 0px 15px 10px $light-second-color !important;
+				}
+				@include mq('tablet','max'){
+					height: 120px;
+				}
+			}
+			p{	
+				align-self: center;
+				justify-self: center;
+				margin: 0 !important;
+				padding: 10px;	
+				align-self: start;
+			    justify-self: center;
+			    margin: 0 !important;
+			    padding: 10px 0;
+			    min-width: 150px;
+			    @include mq('tablet','max'){
+					text-align: center;
+				}
+			}
+		}
 	}
-
+	/*
 	.wcorg-speaker-description{
 		position: relative;
 		padding-left: 150px;
@@ -58,4 +119,5 @@
 			margin: 10px 5px 10px 0;
 		}
 	}
+	*/
 }
