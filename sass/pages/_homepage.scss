@@ -5,40 +5,34 @@
 ***************************************************************************************************/
 .home{
 
-	.textwidget{
-		img{
-			width: 15%;
-		}
-	}
-
+	
 	#custom_html-3{
 
 		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-WordCamp-2019.png');
 		background-size:cover;
-		height: 60vh;
-		padding: 5rem;
+		background-position: center left 50%;
+		height: 80vh;
 		
+
 		.textwidget{
-			max-height: 500px!important;
 			height: 100%;
 			margin-bottom: 2rem!important;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		
+		img{
+			width: auto;
+			height: auto;
 		}
 
-		img{
-			position: relative;
-			top:10rem;
-			left: 15rem;
-		}
 
 		.banner{
-			position: relative;
-			float: right;
 			text-align: right;
 			max-width: 500px;
-			top:-30%;
-			left:-8%;
+			
 			h2{
-				font-size: 5rem;
+				font-size: 4rem;
 				line-height: 1;
 				color:#ffffff;
 			}
@@ -57,6 +51,7 @@
 							box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 						}
 			}
+		  }
 		}
 	}
 
