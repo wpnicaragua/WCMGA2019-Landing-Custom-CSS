@@ -4,27 +4,40 @@
  *
 ***************************************************************************************************/
 	.site-footer {
-		background-image: url('https://2019.managua.wordcamp.org/files/2019/01/avi-richards-183715-unsplashbanner.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		width: 100%;
-		height: 90vh;
-		max-height: initial;
-		min-height: initial;
-		display: block;
-		.site-info{
-			background: transparent;
-			bottom:-3rem;
-			&:before{
-				
-				display: none;
-			}
-		}
-		#jetpack_widget_social_icons-2{
+		#footer-widget-5{
 			position: relative;
-			width: 100%;
-			top:30rem;
+			top:36rem;
+			z-index: 1000;
+			margin:0 auto;
+			border-bottom: 1.5px solid #ffffff; 
+
+			#custom_html-5{
+				margin: 0 auto;
+				.custom-html-widget{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					img{
+						width: 20%;
+						margin: 0 auto;
+					}
+
+					ul{
+						display: flex;
+						list-style: none;
+						padding: 0;
+						justify-content: center;
+						a{
+							color:#ffffff;
+							padding: 5px;
+							margin:5px;
+						}
+					}
+				}
+			}
+
+			#jetpack_widget_social_icons-2{
 			
 			.widget-title{
 				display: none;
@@ -33,17 +46,35 @@
 			ul{
 				display: flex;
 				justify-content: center;
+				padding: 0!important;
 			}
 			
 			.jetpack-social-widget-item{
 				a{
 					color:#fff!important;
-					padding: 5rem;
+					margin: 1rem;
 
 				}
 				
 			}
 		}
+		}
+		.site-info{
+			background: transparent;
+			bottom:-3rem;
+			background-image: url('https://2019.managua.wordcamp.org/files/2019/03/fondo-footer.png');
+			background-size: cover;
+		background-repeat: no-repeat;
+		
+		position: relative;
+		width: 100%;
+		height: 40vh;
+		max-height: initial;
+		min-height: initial;
+		display: block;
+			
+		}
+		
 	}
 
 @media only screen and (max-width: $breakpoint) {
@@ -75,13 +106,14 @@
 
 @media only screen and (max-width: $mobile){
 	.site-footer{
-				height: 90vh;
-				background-size: auto 100%;
-				background-position: center left -400px;
-				margin-top: 2rem;
+				
 				.site-info{
 					bottom: 0!important;
-					top:5rem;
+					top:3rem;
+					height: 90vh;
+					background-size: 400%!important;
+					background-position: top 200px left -250px;
+					margin-top: 0;
 				}
 
 					#jetpack_widget_social_icons-2{
@@ -90,11 +122,23 @@
 					.jetpack-social-widget-item{
 						a{
 							color:#fff!important;
-							padding: 3rem;
+							padding: 1rem!important;
 
 						}
 						
 					}
+				}
+			}
+
+			#custom_html-5{
+				.textwidget{
+					img{
+						width: 40%!important;
+						margin-bottom: 2rem!important;
+					}
+				}
+				ul.foot-menu{
+					display: none!important;
 				}
 			}
 }
@@ -118,17 +162,30 @@
 @media only screen and (max-width: 360px) {
 		
 		.site-footer{
-				height: 90vh;
+				height: 50vh;
+				background-position: center left -200px!important;
+				margin-top: 0rem;
 				
-				background-position: center left -200px;
-				margin-top: 2rem;
+				
+				.custom-html-widget{
+					padding: 2rem;
+						img{
+							width: 30%!important;
+							margin:0 auto;
+						}
+
+						.foot-menu{
+							display: none;
+						}
+					}
 				.site-info{
-					top:-5rem;
+					top:12rem;
 					bottom: 0!important;
 				}
 				#jetpack_widget_social_icons-2{
 					top:20rem;
 					margin-bottom:2rem;
+
 					.jetpack-social-widget-item{
 						a{
 							color:#fff!important;

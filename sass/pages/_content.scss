@@ -24,6 +24,7 @@
 	}
 }
 
+
 #primary {
 	position: relative;
 	padding: 80px 0 20px;
@@ -37,20 +38,14 @@
 
 			.entry-content {
 				padding: 20px 0;
-
-				img {
-					-webkit-box-shadow: -10px 10px 0px 0px $main-color;
-					-moz-box-shadow: -10px 10px 0px 0px $main-color;
-					box-shadow: -10px 10px 0px 0px $main-color;
-				}
-
+				
 				h1,
 				h2,
 				h3,
 				h4,
 				h5,
 				h6 {
-					color: $main-color;
+					color: $main-color!important;
 					text-transform: uppercase;
 				}
 
@@ -99,6 +94,45 @@
 
 	#primary-sidebar {
 		padding: 80px 15px;
+
+	#blog_subscription-3{
+		border-radius: 10px;
+		background: $main-color!important;
+		margin: 0;
+		padding: 0.1rem;
+
+		#subscribe-blog-blog_subscription-3{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			color: #ffffff;
+			font-size: 2rem;
+			button{
+				width: 200px;
+				font-weight: 900;
+				background-color: $second-color;
+				border-radius: 30px;
+				padding: 15px;
+				color:#ffffff;
+				text-align: center;
+				margin:20px auto;
+				border: none;
+				&:hover{
+							box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+						}
+			}
+			#subscribe-email{
+				width: 100%;
+				margin: 0 auto;
+				#subscribe-field-blog_subscription-2{
+					margin: 10px;
+					border-radius: 5px;
+					padding: 10px;
+					border: none;
+				}
+			}
+		}
+	}
 
 		.widget { margin-bottom: 20px;
 
@@ -529,74 +563,7 @@
 		}
 	}
 
-	&.wcb_widget_sponsors {
-		display: none; // display: -ms-flexbox;
-    display: none; // display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: flex-start;
-    align-items: flex-start;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    padding: 0 10%;
-
-		.sponsor-level {
-	    position: relative;
-	    padding: 70px 20px 40px;
-			display: -ms-flexbox;
-	    display: flex;
-	    -ms-flex-direction: row;
-	    flex-direction: row;
-	    -ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	    -ms-flex-pack: center;
-	    justify-content: center;
-	    -ms-flex-align: center;
-	    align-items: center;
-	    -ms-flex-line-pack: stretch;
-	    align-content: stretch;
-	    width: 50%;
-	    margin-bottom: 50px;
-
-			&:before,
-			&:after { @include clearfix; }
-
-			&:after { @include clearfix-after; }
-
-			&-title {
-				color: $fourth-color;
-				text-transform: uppercase;
-				text-align: center;
-				position: absolute;
-		    top: 0;
-		    display: block;
-		    text-align: center;
-		    @include centered-x;
-				@include font-size(2.6);
-			}
-
-			.sponsor-logo {
-				text-align: center;
-		    display: inline-block !important;
-		    padding: 20px;
-		    flex-basis: 33.333%;
-		    align-self: center;
-			}
-
-			&.platinium { width: 100%;
-
-				.sponsor-level-title {
-					@include font-size(3.2);
-				}
-
-				.sponsor-logo { flex-basis: 50%; }
-			}
-		}
-	}
+	
 
 	&.widget_wpcom_social_media_icons_widget {
 
@@ -617,7 +584,7 @@
 		}
 	}
 
-	&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
+	&.widget_wpcom_social_media_icons_widget {
 		position: absolute;
 		bottom: 70px;
 		z-index: 1000;
@@ -631,7 +598,7 @@
 /*================================
 =            sponsors           =
 ================================*/
-
+/*
 .wcorg-sponsor {
     padding-top: 30px;
 }
@@ -677,6 +644,7 @@
 	}
 }
 
+*/
 
 /*================================
 =            Gallery acerca      =
@@ -723,23 +691,7 @@
 		}
 	}
 
-	.widget {
-
-		&.wcb_widget_sponsors {
-
-			.sponsor-level{
-				display: block;
-				text-align: center;
-
-				&-title{ width: 100%; }
-
-				.sponsor-logo {
-					text-align: center;
-			    width: 100%;
-			  }
-			}
-		}
-	}
+	
 
 	.wcorg-speaker {
     padding-top: 70px;
@@ -808,14 +760,7 @@
 
 	.widget {
 
-		&.wcb_widget_sponsors {
-
-			.sponsor-level{
-				width: 100%;
-			}
-		}
-
-		&.wcb_widget_sponsors + .widget_wpcom_social_media_icons_widget {
+		&.widget_wpcom_social_media_icons_widget {
 			bottom: 100px;
 		}
 	}

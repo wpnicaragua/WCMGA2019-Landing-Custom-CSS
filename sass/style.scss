@@ -12,12 +12,14 @@
 @import "global";
 @import "header";
 @import "navigation";
+@import "sponsors";
 @import "footer";
 @import "forms";
 
+
 // Templates/Pages.
-@import "./pages/content";
 @import "./pages/homepage";
+@import "./pages/content";
 @import "./pages/codigo-conducta";
 //@import "./pages/llamado-a-ponentes";
 
