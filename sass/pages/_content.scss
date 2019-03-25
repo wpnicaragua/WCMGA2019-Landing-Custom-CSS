@@ -24,6 +24,7 @@
 	}
 }
 
+
 #primary {
 	position: relative;
 	padding: 80px 0 20px;
@@ -37,20 +38,14 @@
 
 			.entry-content {
 				padding: 20px 0;
-
-				img {
-					-webkit-box-shadow: -10px 10px 0px 0px $main-color;
-					-moz-box-shadow: -10px 10px 0px 0px $main-color;
-					box-shadow: -10px 10px 0px 0px $main-color;
-				}
-
+				
 				h1,
 				h2,
 				h3,
 				h4,
 				h5,
 				h6 {
-					color: $main-color;
+					color: $main-color!important;
 					text-transform: uppercase;
 				}
 
@@ -99,6 +94,45 @@
 
 	#primary-sidebar {
 		padding: 80px 15px;
+
+	#blog_subscription-3{
+		border-radius: 10px;
+		background: $main-color!important;
+		margin: 0;
+		padding: 0.1rem;
+
+		#subscribe-blog-blog_subscription-3{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			color: #ffffff;
+			font-size: 2rem;
+			button{
+				width: 200px;
+				font-weight: 900;
+				background-color: $second-color;
+				border-radius: 30px;
+				padding: 15px;
+				color:#ffffff;
+				text-align: center;
+				margin:20px auto;
+				border: none;
+				&:hover{
+							box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+						}
+			}
+			#subscribe-email{
+				width: 100%;
+				margin: 0 auto;
+				#subscribe-field-blog_subscription-2{
+					margin: 10px;
+					border-radius: 5px;
+					padding: 10px;
+					border: none;
+				}
+			}
+		}
+	}
 
 		.widget { margin-bottom: 20px;
 

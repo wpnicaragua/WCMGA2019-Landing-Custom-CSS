@@ -79,7 +79,15 @@
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 20px;
 	grid-row-gap:20px;
-
+	
+	.entry-title{
+		a{
+			color:$main-color;
+			&:hover{
+				color:#9FCF85;
+			}
+		}
+	}
 	padding-right: 0!important;
 	figure{
 		display: none;
@@ -271,7 +279,7 @@
 	}
 
 	#custom_html-6{
-		top:0!important;
+		top:-5rem!important;
 	
 	.links{
 				display: block!important;
