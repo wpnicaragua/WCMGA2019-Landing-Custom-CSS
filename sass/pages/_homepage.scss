@@ -205,12 +205,13 @@
 }
 
 
-@media only screen and (max-width: $mobile) {
+//@media only screen and (max-width: $mobile) {
 
 	
 	#after-header-widgets {
 		#custom_html-3{
 			background: transparent;
+			margin-top: 4rem;
 			height: 100%;
 			display: flex;
 			flex-direction: column;
@@ -218,12 +219,11 @@
 			.textwidget{
 				flex-direction: column;
 				img{
-					width: 50%;
-					margin: 20px auto;
-					margin-top: 2.5rem!important;
+					width: 60%!important;
+					margin: 3rem auto;
 					position: relative;
-					top:3rem;
-					left:0rem;
+					top:5%!important;
+					left:0!important;
 
 				}
 			}
@@ -313,7 +313,7 @@
 	}
 
 
-}
+//}
 
 @media only screen and (max-width: $breakpoint) {
 	#custom_html-3{
