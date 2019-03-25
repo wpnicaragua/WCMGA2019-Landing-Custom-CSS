@@ -1,4 +1,4 @@
-//## Mixins.
+// Mixins.
 
 // Rem output with px fallback for old browsers
 @mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.3) {
@@ -163,16 +163,6 @@
   }
 }
 
-//Media Queries
-//USO:
-//  .site-header {
-//    padding: 2rem;
-//    font-size: 1.8rem;
-//    @include mq('tablet-wide') {
-//      padding-top: 4rem;
-//      font-size: 2.4rem;
-//    }
-//  }
 
 $breakpoints: (
     "phone":        400px,
