@@ -1974,6 +1974,7 @@ body.page.page-id-8 #content {
             grid-template-columns: 1fr !important;
         grid-column-gap: 0px; } }
   .page-id-8 .wcorg-speaker {
+    padding: 1rem 1.2rem;
     margin-bottom: 25px;
     width: 100%;
     max-width: 100% !important;
@@ -1981,8 +1982,8 @@ body.page.page-id-8 #content {
     display: grid !important;
     background-color: #f4f4f4;
     box-shadow: 0 10px 10px rgba(50, 50, 90, 0.1), 0 5px 10px rgba(0, 0, 0, 0.07);
-    grid-template-areas: "name" "info";
-    padding: 1rem 1.2rem; }
+    grid-template-areas: 'name' 'info';
+     }
     .page-id-8 .wcorg-speaker h2 {
       grid-area: name;
       color: #5f4b8b !important;
