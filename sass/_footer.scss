@@ -159,11 +159,10 @@
 			
 	}
 
-@media only screen and (max-width: 360px) {
+//@media only screen and (max-width: 360px) {
 		
 		.site-footer{
-				height: 50vh;
-				background-position: center left -200px!important;
+				
 				margin-top: 0rem;
 				
 				
@@ -178,9 +177,14 @@
 							display: none;
 						}
 					}
+					#footer-widget-5{
+						top:43rem;
+					}
 				.site-info{
 					top:12rem;
+					height: 50vh;
 					bottom: 0!important;
+					background-size: cover!important;
 				}
 				#jetpack_widget_social_icons-2{
 					top:20rem;
@@ -196,5 +200,5 @@
 					}
 				}
 			}
-}
+//}
 
