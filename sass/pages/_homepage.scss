@@ -18,7 +18,6 @@
 		height: 80vh;
 		
 		.custom-html-widget{
-
 			height: 100%;
 			max-height: initial!important;
 			margin-bottom: 2rem!important;
@@ -45,9 +44,11 @@
 				color:#ffffff;
 				font-weight: 700!important;
 			}
+
 			span{
 				color:$second-color;
 			}
+
 			a{
 				width: 200px;
 				font-weight: 900;
@@ -134,7 +135,7 @@
 	#custom_html-6{
 		position: relative;
 		background: transparent;
-		top:-10rem!important;
+		top:-25rem!important;
 		padding: 0px;
 			.links{
 				margin:0 auto;
@@ -444,7 +445,8 @@
 }
 
 @media only screen and (max-width: 360px) {
-	#custom_html-3{
+	.home{
+		#custom_html-3{
 
 		.textwidget{
 			
@@ -458,6 +460,10 @@
 			left: 0!important;
 		 }
 		}
-		
+	}
+
+	#custom_html-6{
+		top: -10rem!important;
+	}
 	}
 }
