@@ -59,29 +59,41 @@
 	}
 
 		.wcb_widget_sponsors{
-	
+		
+		.sponsor-level.esmeralda {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-direction: column;
+			}
+
+			.sponsor-level.oro, .sponsor-level.plata {
+			    display: grid;
+			    grid-template-columns: 1fr 1fr 1fr;
+			    grid-template-areas: "title title title";
+			}
+
+			.oro .sponsor-level-title, .plata .sponsor-level-title {
+			    text-align: center;
+			    grid-area: title;
+			}
+
+			.oro .sponsor-logo, .plata .sponsor-logo {
+
+			    display: block !important;
+			    text-align: center;
+
+			}
 
 		.sponsor-level{
-			display: flex;
-		    flex-direction: row;
-		    flex-wrap: wrap;
-		    justify-content: center;
-		    align-items: center;
-		    width: 100%;
-		    height: 100%;
+			
 
 		    h4{
 		    	text-transform: uppercase;
 		    	font-size: 2.5rem;
 		    }
 		    
-			.sponsor-logo {
-				display: flex;
-				justify-content: center;
-			    padding: 20px;
-			    width: 100%;
-			    height: 100%;
-			  }
+			
 
 		}
 	}
