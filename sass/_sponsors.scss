@@ -65,15 +65,38 @@
 			    justify-content: center;
 			    align-items: center;
 			    flex-direction: column;
+
+			    img{
+			    	max-height: 350px;
+			    }
 			}
 
 			.sponsor-level.oro, .sponsor-level.plata {
 			    display: grid;
 			    grid-template-columns: 1fr 1fr 1fr;
 			    grid-template-areas: "title title title";
+			    justify-content: center;
+				justify-items: center;
+				align-items: center;
 			}
+				
+				.sponsor-level.bronce, .sponsor-level.social-media-partner {
+
+				    display: grid;
+				    grid-template-columns: 1fr 1fr 1fr 1fr;
+				    grid-template-areas: "title title title title";
+				    justify-content: center;
+				    justify-items: center;
+				    align-items: center;
+
+				}
 
 			.oro .sponsor-level-title, .plata .sponsor-level-title {
+			    text-align: center;
+			    grid-area: title;
+			}
+
+			.bronce .sponsor-level-title, .social-media-partner .sponsor-level-title {
 			    text-align: center;
 			    grid-area: title;
 			}
@@ -82,12 +105,21 @@
 
 			    display: block !important;
 			    text-align: center;
+			    padding: 3rem;
+
+			}
+
+			.bronce .sponsor-logo, .social-media-partner .sponsor-logo {
+
+			    display: block !important;
+			    text-align: center;
+			    padding: 3rem;
 
 			}
 
 		.sponsor-level{
 			
-
+			
 		    h4{
 		    	text-transform: uppercase;
 		    	font-size: 2.5rem;
