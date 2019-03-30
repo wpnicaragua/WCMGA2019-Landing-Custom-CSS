@@ -100,7 +100,7 @@
 #primary-sidebar{ display: none; }
 
 
-	#main {
+	div#main {
 		padding-top: 0!important;
 		min-height: 800px;
 	}
@@ -136,10 +136,12 @@
 		position: relative;
 		background: transparent;
 		top:-25rem!important;
+		height: 420px;
 		padding: 0px;
+
 			.links{
 				margin:0 auto;
-				width: 70%;
+				width: 75%;
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
 				
@@ -151,7 +153,7 @@
 					justify-content: center;
 					align-content: center;
 					box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-					margin:20px 40px;
+					margin:20px 20px;
 					border-radius: 10px;
 					padding: 50px 30px;
 					text-align: center;
@@ -189,7 +191,7 @@
 		padding: 0;
 		background: #fff fixed no-repeat 50% 50%;
 		background-size: cover;
-		background-image: url('https://2019.managua.wordcamp.org/files/2019/02/Banner-3_comunidad.png');
+		background-image: url('https://2019.managua.wordcamp.org/files/2019/03/banner-3_comunidad_modificado.jpg');
 		
 		.custom-html-widget{
 
@@ -216,74 +218,88 @@
 
 	}
 
+	.widget_blog_subscription {
+		.success {
+			color: $white;
+			text-align: center;
+		}
+	}
+
 
 }
 
 
 @media only screen and (max-width: $mobile) {
 
-	
-	#after-header-widgets {
-		#custom_html-3{
-			background: transparent;
-			margin-top: 4rem;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			.textwidget{
+	.home {
+		#after-header-widgets {
+			margin-bottom: 0;
+
+			#custom_html-3{
+				background: transparent;
+				margin-top: 4rem;
+				height: 100%;
+				display: flex;
 				flex-direction: column;
-				img{
-					width: 60%!important;
-					margin: 3rem auto;
-					position: relative;
-					top:0!important;
-					left:0!important;
+				justify-content: center;
 
+				.textwidget{
+					flex-direction: column;
+					img{
+						width: 60%!important;
+						margin: 3rem auto;
+						position: relative;
+						top:0!important;
+						left:0!important;
+
+					}
 				}
-			}
-			
-			.banner{
-				margin: 0 auto; 
-				margin-top: 1.5rem;
-				text-align: center;
-				width: 100%;
-
-				h2{
-					color: $main-color;
-					font-size: 3.5rem;
+				
+				.banner{
+					margin: 0 auto; 
 					margin-top: 1.5rem;
-				}
-				a{
-					&:after{
-						content: '\f145';
-						font-family: 'fontawesome';
-						margin-left: 0.5rem;
+					text-align: center;
+					width: 100%;
+
+					h2{
+						color: $main-color;
+						font-size: 3.5rem;
+						margin-top: 1.5rem;
+					}
+					a{
+						&:after{
+							content: '\f145';
+							font-family: 'fontawesome';
+							margin-left: 0.5rem;
+						}
 					}
 				}
 			}
 		}
-	}
 
-	#text-6{
-		h1{
+		#text-6{
+			min-height: auto;
+
+			h1{
+				color:$main-color!important;
+				text-align: center;
+			}
+			background: #ffffff!important;
 			color:$main-color!important;
-			text-align: center;
+			padding: 20px!important;
+			.textwidget{
+				width: 100%!important;
+			}
 		}
-		background: #ffffff!important;
-		color:$main-color!important;
-		padding: 20px!important;
-		.textwidget{
-			width: 100%!important;
-		}
-	}
 
-	#custom_html-6{
-		
-		top: -15rem !important;
-	.links{
+		#custom_html-6{
+			top: 0 !important;
+			padding: 40px 0;
+			height: auto;
+
+			.links{
 				display: block!important;
-				margin:0 20px;
+				padding: 0 20px;
 				width: 100%;
 				
 				.link-ponentes,
@@ -296,35 +312,35 @@
 				}
 				
 			}
-	}
+		}
 
-	#custom_html-2{
-		padding: 15px 10px!important;
-		background-size: 250%!important;
-		background-position: center!important;
-		.textwidget{
-			margin:0 !important;
-			text-align: center;
-			h2{
-				margin:0!important;
-				margin-top: 2.5rem!important;
-				width: 100%!important;
-				font-weight: 900!important;
-				font-size: 2.5rem!important;
+		#custom_html-2{
+			padding: 15px 10px!important;
+			background-position: center!important;
+			.textwidget{
+				margin:0 !important;
+				text-align: center;
+				h2{
+					margin:0!important;
+					margin-top: 2.5rem!important;
+					width: 100%!important;
+					font-weight: 900!important;
+					font-size: 2.5rem!important;
+				}
+				img{
+					width: 40%;
+				}
 			}
-			img{
-				width: 40%;
+			.custom-html-widget{
+				flex-direction: column;
 			}
 		}
-		.custom-html-widget{
-			flex-direction: column;
-		}
-	}
 
-	#content{
-		display: block!important;
-		width: 100%!important;
-		padding: 20px!important;
+		#content{
+			display: block!important;
+			width: 100%!important;
+			padding: 20px!important;
+		}
 	}
 
 
@@ -377,8 +393,6 @@
 			    	text-align: center!important;
 			    }
 			}
-
-		    
 	}
 
 	#after-header-widgets{
@@ -392,19 +406,17 @@
 	}
 
 	#custom_html-6 {
-	    .links{
-			width: 80%!important;
-			display: block!important;
+    .links{
+		width: 80%!important;
+		display: block!important;
 
-					.link-ponentes,
-					.link-programa,
-					.link-ticket{
-						margin: 35px 40px!important;
-						
-
-					}
-	    }
-	   
+			.link-ponentes,
+			.link-programa,
+			.link-ticket{
+				margin: 35px 40px!important;
+				
+			}
+    }	   
 	}
 
 	#text-6{
@@ -446,24 +458,21 @@
 
 @media only screen and (max-width: 360px) {
 	.home{
+
 		#custom_html-3{
 
-		.textwidget{
-			
-			margin-top: 10rem!important;
+			.textwidget{
+				
+				margin-top: 10rem!important;
 
-			.banner{
-				left: 0;
-				width: 100%;
+				.banner{
+					left: 0;
+					width: 100%;
+				}
+				img{ 
+					left: 0!important;
+				}
 			}
-			img{ 
-			left: 0!important;
-		 }
 		}
-	}
-
-	#custom_html-6{
-		top: -10rem!important;
-	}
 	}
 }
