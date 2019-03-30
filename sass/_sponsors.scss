@@ -119,7 +119,19 @@
 
 		.sponsor-level{
 			
-			
+			a[href*="greengeeks"] {
+			    grid-column: 1;
+			    grid-row: 2;
+			}
+			a[href*="dreamhost"] {
+
+			    grid-auto-flow: dense;
+			    align-self: center;
+			    justify-self: center;
+			    grid-area: logo;
+			    transform: scale(0.8,0.8);
+
+			}
 		    h4{
 		    	text-transform: uppercase;
 		    	font-size: 2.5rem;
@@ -177,6 +189,35 @@
 
 	#custom_html-4{
 		width: 100%!important;
+	}
+
+	.wcb_widget_sponsors{
+		.sponsor-level.oro, .sponsor-level.plata, .sponsor-level.bronce, .sponsor-level.social-media-partner {
+			    display: grid;
+			    grid-template-columns: 1fr;
+			    grid-template-areas: "title";
+			    justify-content: center;
+				justify-items: center;
+				align-items: center;
+			}
+		.sponsor-level.oro a {
+
+		    width: 70% !important;
+
+		}
+
+		.sponsor-level.plata a {
+
+		    width: 65% !important;
+
+		}
+
+		.sponsor-level.bronce a, .sponsor-level.social-media-partner a {
+
+		    width: 60% !important;
+
+		}
+
 	}
 }
 
