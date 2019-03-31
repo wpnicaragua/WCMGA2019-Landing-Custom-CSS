@@ -91,11 +91,7 @@
 
 				}
 
-			.oro .sponsor-level-title, .plata .sponsor-level-title {
-			    text-align: center;
-			    grid-area: title;
-			}
-
+			.oro .sponsor-level-title, .plata .sponsor-level-title, 
 			.bronce .sponsor-level-title, .social-media-partner .sponsor-level-title {
 			    text-align: center;
 			    grid-area: title;
@@ -217,7 +213,7 @@
 		.sponsor-level.oro, .sponsor-level.plata, .sponsor-level.bronce, .sponsor-level.social-media-partner {
 			    display: grid;
 			    grid-template-columns: 1fr;
-			    grid-template-areas: "title";
+			    grid-template-areas: "title" "logo";
 			    justify-content: center;
 				justify-items: center;
 				align-items: center;
