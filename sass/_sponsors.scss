@@ -217,7 +217,7 @@
 		.sponsor-level.oro, .sponsor-level.plata, .sponsor-level.bronce, .sponsor-level.social-media-partner {
 			    display: grid;
 			    grid-template-columns: 1fr!important;
-			    grid-template-areas: "title"!important;
+			    grid-template-areas: "title";
 			    justify-content: center;
 				justify-items: center;
 				align-items: center;
@@ -239,6 +239,26 @@
 		    width: 60% !important;
 
 		}
+
+		.oro .sponsor-logo, .plata .sponsor-logo {
+
+			    
+			    padding: 1rem;
+
+			}
+		a[href*="madre"], a[href*="maje"] {
+
+			  grid-column: 1;
+			   
+
+			}
+		a[href*="dreamhost"] {
+
+			    
+			    transform: scale(1,1);
+			    
+
+			}
 
 	}
 }
