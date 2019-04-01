@@ -18,7 +18,7 @@ body.page.page-id-8 #content {
 		#content {
 		    padding-right: 0;
 		    @include mq('tablet','max'){
-		    	padding:0 !important;
+		    	padding:0 1.5em !important;
 		    }
 		}
 	}
@@ -56,6 +56,10 @@ body.page.page-id-8 #content {
 			grid-area: name;
 			color: $third-color !important;
 			text-shadow: 1px 1px, $light-second-color 2px 2px,$light-second-color 3px 3px, $light-second-color 4px 4px;
+			a{
+				color: $third-color !important;
+    			text-transform: uppercase;
+			}
 		}
 		.wcorg-speaker-description{
 			grid-area: info;
@@ -70,6 +74,8 @@ body.page.page-id-8 #content {
 			@include mq('tablet','max'){
 				grid-template-areas: "img" "p1" "p2" "p3";
 				grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+			    grid-template-columns: 100px 1fr;
+    			grid-column-gap: 6px;
 			} 
 			img{
 				align-self: center;
@@ -84,7 +90,8 @@ body.page.page-id-8 #content {
 					box-shadow: 0px 0px 15px 10px $light-second-color !important;
 				}
 				@include mq('tablet','max'){
-					height: 120px;
+				    height: 100px;
+					min-width: 100px;
 				}
 			}
 			p{	
@@ -99,6 +106,8 @@ body.page.page-id-8 #content {
 			    min-width: 150px;
 			    @include mq('tablet','max'){
 					text-align: center;
+					width: 85%;
+					max-width: 90%;
 				}
 			}
 		}
@@ -121,4 +130,22 @@ body.page.page-id-8 #content {
 		}
 	}
 	*/
+}
+
+
+/*Speakers single*/
+.wcb_speaker.type-wcb_speaker{
+	.speaker-avatar{
+		img{
+			margin-bottom: 20px;
+			max-width: 120px;
+			min-width: 120px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 0px 10px $light-second-color !important;
+			transition: box-shadow $transicion;
+			&:hover{
+				box-shadow: 0px 0px 15px 10px $light-second-color !important;
+			}
+		}
+	}
 }
