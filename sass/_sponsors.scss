@@ -114,17 +114,24 @@
 			}
 
 		.sponsor-level{
+
+			a[href*="godaddy"] {
+
+			    transform: scale(0.8, 0.8);
+
+			}
 			
 			a[href*="greengeeks"] {
 			    grid-column: 1;
 			    grid-row: 2;
+			    transform: scale(1.2, 1.2);
 			}
 			a[href*="dreamhost"] {
 
 			    grid-auto-flow: dense;
 			    align-self: center;
 			    justify-self: center;
-			    transform: scale(0.8,0.8);
+			    transform: scale(0.5,0.5);
 			    grid-column:1/5;
 
 			}
@@ -139,7 +146,7 @@
 			    grid-auto-flow: dense;
 			    align-self: center;
 			    justify-self: center;
-			    transform: scale(0.8,0.8);
+			   
 
 			}
 			a[href*="maje"] {
