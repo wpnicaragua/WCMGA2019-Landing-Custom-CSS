@@ -215,7 +215,7 @@
 
 	.wcb_widget_sponsors{
 		.sponsor-level.oro, .sponsor-level.plata, .sponsor-level.bronce, .sponsor-level.social-media-partner {
-			    display: block;
+			    display: block!important;
 			    //grid-template-columns: block!important;
 			    //grid-template-areas: "title";
 			    justify-content: center;
