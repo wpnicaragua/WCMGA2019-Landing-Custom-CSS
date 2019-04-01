@@ -6,7 +6,6 @@
 #main {
 	padding-bottom: 0px;
 	padding-top: 60px!important;
-	//margin-top: 15rem;
 	background: transparent!important;
 
 	&:before,
@@ -664,9 +663,9 @@
 =      fixing white spaces      =
 ================================*/
 
-#main{
+.home #main{
 	padding-top: 0!important;
-	}
+}
 
 
 @media only screen and (max-width: $tablet-portrait) {

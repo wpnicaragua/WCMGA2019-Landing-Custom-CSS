@@ -5,8 +5,8 @@
 ***************************************************************************************************/
 #footer-widget-1{
 	background: #ffffff;
-	padding: 20px;
-
+	padding: 0px!important;
+	
 	#blog_subscription-2{
 		background: $main-color;
 		margin: 0;
@@ -59,39 +59,112 @@
 	}
 
 		.wcb_widget_sponsors{
-	
+		
+		.sponsor-level.esmeralda {
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-direction: column;
+
+			    img{
+			    	max-height: 350px;
+			    }
+			}
+
+			.sponsor-level.oro, .sponsor-level.plata {
+			    display: grid;
+			    grid-template-columns: 1fr 1fr 1fr;
+			    grid-template-areas: "title title title";
+			    justify-content: center;
+				justify-items: center;
+				align-items: center;
+			}
+				
+				.sponsor-level.bronce, .sponsor-level.social-media-partner {
+
+				    display: grid;
+				    grid-template-columns: 1fr 1fr 1fr 1fr;
+				    grid-template-areas: "title title title title";
+				    justify-content: center;
+				    justify-items: center;
+				    align-items: center;
+
+				}
+
+			.oro .sponsor-level-title, .plata .sponsor-level-title, 
+			.bronce .sponsor-level-title, .social-media-partner .sponsor-level-title {
+			    text-align: center;
+			    grid-area: title;
+			}
+
+			.oro .sponsor-logo, .plata .sponsor-logo {
+
+			    display: block !important;
+			    text-align: center;
+			    padding: 3rem;
+
+			}
+
+			.bronce .sponsor-logo, .social-media-partner .sponsor-logo {
+
+			    display: block !important;
+			    text-align: center;
+			    padding: 3rem;
+
+			}
 
 		.sponsor-level{
-			display: flex;
-		    flex-direction: row;
-		    flex-wrap: wrap;
-		    justify-content: center;
-		    align-items: center;
-		    width: 100%;
-		    height: 100%;
 
+			a[href*="godaddy"] {
+
+			    transform: scale(0.8, 0.8);
+
+			}
+			
+			a[href*="greengeeks"] {
+			    grid-column: 1;
+			    grid-row: 2;
+			    transform: scale(1.2, 1.2);
+			}
+			a[href*="dreamhost"] {
+
+			    grid-auto-flow: dense;
+			    align-self: center;
+			    justify-self: center;
+			    transform: scale(0.5,0.5);
+			    grid-column:1/5;
+
+			}
+
+			a[href*="madre"] {
+
+			    grid-column: 1 / 3;
+				transform: scale(2,2);
+			}
+			a[href*="madre"], a[href*="maje"] {
+
+			    grid-auto-flow: dense;
+			    align-self: center;
+			    justify-self: center;
+			   
+
+			}
+			a[href*="maje"] {
+
+			    grid-column: 3 / 5;
+
+			}
 		    h4{
 		    	text-transform: uppercase;
 		    	font-size: 2.5rem;
 		    }
 		    
-			.sponsor-logo {
-				display: flex;
-				justify-content: center;
-			    padding: 20px;
-			    width: 100%;
-			    height: 100%;
-			  }
+			
 
 		}
 	}
 	
-	.esmeralda a img {
-	    width: 60% !important;
-	    margin: 0 auto 0 auto;
-	    max-height: 100% !important;
-	}
-
+	
 	#custom_html-4{
 		width: 50%;
 		margin: 0 auto;
@@ -121,7 +194,7 @@
 }
 
 	   
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: 360px) {
 #blog_subscription-2{
 		padding: 1rem!important;
 		#subscribe-blog-blog_subscription-2{
@@ -138,6 +211,60 @@
 
 	#custom_html-4{
 		width: 100%!important;
+	}
+
+	.wcb_widget_sponsors{
+		.sponsor-level.oro, .sponsor-level.plata, .sponsor-level.bronce, .sponsor-level.social-media-partner {
+			    display: block;
+			    //grid-template-columns: block!important;
+			    //grid-template-areas: "title";
+			    justify-content: center;
+				justify-items: center;
+				align-items: center;
+			}
+		.wcb_widget_sponsors .sponsor-logo {
+
+		    margin: 0 auto;
+
+		}
+		.sponsor-level.oro a {
+
+		    width: 70% !important;
+
+		}
+
+		.sponsor-level.plata a {
+
+		    width: 65% !important;
+
+		}
+
+		.sponsor-level.bronce a, .sponsor-level.social-media-partner a {
+
+		    width: 60% !important;
+
+		}
+
+		.oro .sponsor-logo, .plata .sponsor-logo {
+
+			    
+			    padding: 1rem;
+
+			}
+		a[href*="madre"], a[href*="maje"] {
+
+			  grid-column: 1;
+			   
+
+			}
+		a[href*="dreamhost"] {
+
+			    
+			    transform: scale(1,1)!important;
+			    
+
+			}
+
 	}
 }
 
