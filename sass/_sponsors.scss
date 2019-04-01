@@ -216,12 +216,17 @@
 	.wcb_widget_sponsors{
 		.sponsor-level.oro, .sponsor-level.plata, .sponsor-level.bronce, .sponsor-level.social-media-partner {
 			    display: grid;
-			    grid-template-columns: 1fr!important;
-			    grid-template-areas: "title";
+			    grid-template-columns: block!important;
+			    //grid-template-areas: "title";
 			    justify-content: center;
 				justify-items: center;
 				align-items: center;
 			}
+		.wcb_widget_sponsors .sponsor-logo {
+
+		    margin: 0 auto;
+
+		}
 		.sponsor-level.oro a {
 
 		    width: 70% !important;
@@ -255,7 +260,7 @@
 		a[href*="dreamhost"] {
 
 			    
-			    transform: scale(1,1);
+			    transform: scale(1,1)!important;
 			    
 
 			}
