@@ -374,6 +374,7 @@
 }
 
 @media only screen and (max-width: $tablet-portrait) {
+
 .site-header{
 	height: 0!important;
 	}
@@ -406,6 +407,9 @@
 	}
 
 	#custom_html-6 {
+		min-height: 420px!important;
+		height: auto!important;
+
     .links{
 		width: 80%!important;
 		display: block!important;
