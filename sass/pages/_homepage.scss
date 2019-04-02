@@ -346,7 +346,7 @@
 
 }
 
-@media only screen and (max-width: $breakpoint) {
+//@media only screen and (max-width: $breakpoint) {
 	#custom_html-3{
 		background-position: center left -50%!important;
 		.textwidget{
@@ -356,7 +356,7 @@
 				top:0!important;
 		 	}
 		 .banner{
-			width: 50%;
+			width: 100%;
 		 	h2{
 
 		 		font-size: 3rem;
@@ -368,10 +368,16 @@
 	}
 
 	#text-6{
+
 		padding: 20px 30px 20px 30px!important;
-		background-size: 220%!important;
+		background-size: 410%!important;
 	}
-}
+
+	#custom_html-6{
+		top: -15rem !important;
+	}
+	
+//}
 
 @media only screen and (max-width: $tablet-portrait) {
 
