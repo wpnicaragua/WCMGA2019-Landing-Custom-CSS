@@ -193,6 +193,16 @@
 	}
 }
 
+@media only screen and (max-width: $breakpoint) {
+	#text-5{
+		h1{
+			width: 100%!important;
+			margin:0 auto;
+			font-size: 2.5rem!important;
+			text-align: center!important;
+		}
+	}
+}
 	   
 @media only screen and (max-width: 360px) {
 #blog_subscription-2{

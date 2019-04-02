@@ -130,7 +130,16 @@
 }
 
 @media only screen and (max-width: $breakpoint) {
-	//
+	
+	background:$main-color;
+
+	.site-navigation .menu-toggle:after {
+    
+	    position: absolute;
+	    top: 3rem;
+	    right: calc(50% - 2rem);
+	    margin: 0 auto;
+	}
 }
 
 @media only screen and (max-width: $mobile) {
