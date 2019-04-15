@@ -356,7 +356,7 @@
 				top:0!important;
 		 	}
 		 .banner{
-			width: 50%;
+			width: 100%;
 		 	h2{
 
 		 		font-size: 3rem;
@@ -368,12 +368,19 @@
 	}
 
 	#text-6{
+
 		padding: 20px 30px 20px 30px!important;
-		background-size: 220%!important;
+		background-size: 410%!important;
 	}
+
+	#custom_html-6{
+		top: -15rem !important;
+	}
+
 }
 
 @media only screen and (max-width: $tablet-portrait) {
+
 .site-header{
 	height: 0!important;
 	}
@@ -406,6 +413,9 @@
 	}
 
 	#custom_html-6 {
+		min-height: 420px!important;
+		height: auto!important;
+
     .links{
 		width: 80%!important;
 		display: block!important;
@@ -447,14 +457,15 @@
 	}
 
 	#custom_html-3{
-	    background-position:center left 50%!important;
+	    background-position:center left 50%;
 	}
 
 	#text-6{
 		padding: 20px 30px 20px 30px!important;
-		background-size: 140%!important;
+		background-size: 160%!important;
 	}
 }
+
 
 @media only screen and (max-width: 360px) {
 	.home{

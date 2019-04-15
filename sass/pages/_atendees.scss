@@ -15,5 +15,40 @@
 		display: none;
 	}
 
-	
+	@media only screen and (max-width: $breakpoint) {
+			.tix-attendee-list {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+
+		li{
+			width:100%!important;
+			display: flex;
+			flex-direction: column;
+			height: unset!important;
+			justify-content: center;
+		}
+
+		.tix-field{
+			margin-left: 0!important;
+			text-align: center;
+		}
+
+		.avatar{
+			max-width: 120px;
+			min-width: 120px;
+			border-radius: 50%;
+			margin:20px auto;
+			height: unset!important;
+			box-shadow: 0px 0px 0px 10px $light-second-color !important;
+			transition: box-shadow $transicion;
+			&:hover{
+				box-shadow: 0px 0px 15px 10px $light-second-color !important;
+			}
+		}
+	}
+		
+	}
 }
+
+	
