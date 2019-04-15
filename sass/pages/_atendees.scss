@@ -15,40 +15,100 @@
 		display: none;
 	}
 
-	@media only screen and (max-width: $breakpoint) {
-			.tix-attendee-list {
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-
+	.tix-attendee-list {
+		display: grid;
+    	grid-template-columns: repeat( 3, minmax( 200px, 1fr ) );
+    	grid-column-gap: 33px;
+    	@include mq('tablet','max'){
+    		grid-template-columns: 1fr !important;
+    		grid-column-gap: 0px;
+    	}
 		li{
-			width:100%!important;
-			display: flex;
-			flex-direction: column;
-			height: unset!important;
-			justify-content: center;
-		}
-
-		.tix-field{
-			margin-left: 0!important;
-			text-align: center;
-		}
-
-		.avatar{
-			max-width: 120px;
-			min-width: 120px;
-			border-radius: 50%;
-			margin:20px auto;
-			height: unset!important;
-			box-shadow: 0px 0px 0px 10px $light-second-color !important;
-			transition: box-shadow $transicion;
-			&:hover{
-				box-shadow: 0px 0px 15px 10px $light-second-color !important;
+			width: 100% !important;
+		    max-width: 100% !important;
+		    height: 120px !important;
+		    max-height: 120px !important;
+		    display: grid !important;
+		    background-color: $light-gray;;
+		    box-shadow: 0 10px 10px rgba(50, 50, 90, 0.1), 0 5px 10px rgba(0, 0, 0, 0.07);
+		    grid-template-rows: repeat(3, auto);
+		    grid-template-columns: 80px 1fr;
+		    padding: 1rem 1.5rem;
+		    grid-column-gap: 10px;
+		    .tix-field{
+		    	margin: 0 !important;
+		    	text-align: right;
+		    	grid-column: 2 / -1;
+		    }
+		    .tix-attendee-name{
+				color: $third-color !important;
+				text-shadow: 1px 1px, $light-second-color 2px 2px,$light-second-color 3px 3px, $light-second-color 4px 4px;
+		    	font-size: 1.4em !important;
+			    line-height: 1em;
+			    display: grid !important;
+			    grid-template-columns: 1fr;
+		    	.tix-last{
+		    		font-size: 0.8em !important;
+		    	}
+		    }
+		    .avatar{
+				max-width: 100%;
+				min-width: 100%;
+				border-radius: 50%;
+				margin:0;
+				height: unset!important;
+				box-shadow: 0px 0px 0px 10px $light-second-color !important;
+				transition: box-shadow $transicion;
+				grid-row: 1 / -1;
+				align-self: center;
+				justify-self: center;
+				&:hover{
+					box-shadow: 0px 0px 15px 10px $light-second-color !important;
+				}
 			}
 		}
 	}
+
+	//Responsive
+	
+	@media only screen and (max-width: $breakpoint) {
+		.tix-attendee-list {
+			padding: 0;
+			grid-template-columns: 1fr !important;
+
+			li{
+				width:100%!important;
+				height: 120px !important;
+		    	max-height: 120px !important;
+				justify-content: center;
+				grid-template-columns: 1fr !important;
+				padding: 1.8rem 1.5rem !important;
+				grid-column-gap: 0px !important;
+			    grid-row-gap: 16px !important;
+			}
+
+			.tix-field{
+				margin-left: 0!important;
+				text-align: center !important;
+				grid-column: 1 / -1 !important;
+			}
+
+			.avatar{
+				max-width: 120px !important;
+				min-width: 120px !important;
+				border-radius: 50%;
+				margin:20px auto;
+				height: unset!important;
+				box-shadow: 0px 0px 0px 10px $light-second-color !important;
+				transition: box-shadow $transicion;
+				&:hover{
+					box-shadow: 0px 0px 15px 10px $light-second-color !important;
+				}
+			}
+		}	
 		
 	}
+	
 }
 
 	
